@@ -1,0 +1,287 @@
+name: Weekly AI Research Notes
+
+on:
+  schedule:
+    - cron: '0 9 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  weekly-research:
+    runs-on: ubuntu-latest
+    env:
+      TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Generate weekly research entry
+        run: |
+          python3 << 'PYTHON_SCRIPT'
+          import json
+          import os
+          import requests
+          import datetime
+          import sys
+
+          today = datetime.date.today()
+          date_str = today.strftime("%Y-%m-%d")
+          week_str = f"## Week of {date_str}"
+
+          # Check if this week's entry already exists (idempotent)
+          with open("weekly_ai_notes.md", "r") as f:
+              existing = f.read()
+          if week_str in existing:
+              print(f"Entry for week of {date_str} already exists. Skipping.")
+              sys.exit(0)
+
+          # Topic rotation table
+          topics = [
+              {
+                  "name": "LLM Architecture & Scaling",
+                  "query": "mixture of experts LLM 2025 2026 arxiv efficiency scaling"
+              },
+              {
+                  "name": "RAG Systems",
+                  "query": "retrieval augmented generation chunking evaluation 2025 2026"
+              },
+              {
+                  "name": "Agentic AI",
+                  "query": "multi-agent LLM orchestration LangGraph production 2025 2026"
+              },
+              {
+                  "name": "LLMOps & Evaluation",
+                  "query": "LLM evaluation pipeline hallucination detection production 2025 2026"
+              },
+              {
+                  "name": "AI Safety & Alignment",
+                  "query": "LLM guardrails alignment RLHF Constitutional AI 2025 2026"
+              },
+              {
+                  "name": "Open Source Models",
+                  "query": "open weight LLM DeepSeek Qwen Llama fine-tuning 2025 2026"
+              },
+              {
+                  "name": "Inference Optimization",
+                  "query": "vLLM speculative decoding inference optimization 2025 2026"
+              },
+              {
+                  "name": "Vector Databases & Embeddings",
+                  "query": "vector database RAG embeddings benchmark 2025 2026"
+              },
+          ]
+
+          # Read current stats
+          with open("stats.json", "r") as f:
+              stats = json.load(f)
+
+          current_index = stats.get("current_week_index", 0)
+          topic = topics[current_index]
+          topic_name = topic["name"]
+          search_query = topic["query"]
+
+          print(f"Week index: {current_index}")
+          print(f"Topic: {topic_name}")
+          print(f"Search query: {search_query}")
+
+          # --- STEP 1: Search with Tavily API ---
+          tavily_key = os.environ.get("TAVILY_API_KEY", "")
+          groq_key = os.environ.get("GROQ_API_KEY", "")
+
+          title = None
+          url = None
+          content = None
+          api_failed = False
+
+          if tavily_key and groq_key:
+              try:
+                  print("Calling Tavily API...")
+                  tavily_response = requests.post(
+                      "https://api.tavily.com/search",
+                      json={
+                          "api_key": tavily_key,
+                          "query": search_query,
+                          "search_depth": "advanced",
+                          "max_results": 5,
+                          "include_raw_content": False,
+                      },
+                      timeout=30,
+                  )
+                  tavily_response.raise_for_status()
+                  tavily_data = tavily_response.json()
+
+                  results = tavily_data.get("results", [])
+                  if results:
+                      # Pick the best result (first with substantial content)
+                      best = None
+                      for r in results:
+                          if r.get("content") and len(r["content"]) > 100:
+                              best = r
+                              break
+                      if not best:
+                          best = results[0]
+
+                      title = best.get("title", "Untitled")
+                      url = best.get("url", "")
+                      content = best.get("content", "")
+                      print(f"Found: {title}")
+                      print(f"URL: {url}")
+                      print(f"Content length: {len(content)} chars")
+                  else:
+                      print("No results from Tavily")
+                      api_failed = True
+
+              except Exception as e:
+                  print(f"Tavily API error: {e}")
+                  api_failed = True
+          else:
+              print("API keys not configured")
+              api_failed = True
+
+          # --- STEP 2: Generate summary with Groq API ---
+          entry_md = None
+
+          if not api_failed and title and content:
+              try:
+                  print("Calling Groq API...")
+                  groq_prompt = f"""You are a senior AI engineer writing a weekly research journal entry.
+
+          Given the following article:
+          Title: {title}
+          URL: {url}
+          Content: {content}
+
+          Write a journal entry with:
+          1. A 4-6 sentence technical summary (accurate, practitioner-focused, no marketing language)
+          2. Three concrete engineering insights a developer could act on
+          3. Three relevant technical tags
+
+          Be precise. Avoid hype. If unsure about a claim, omit it.
+          Format your response in clean Markdown matching this exact template:
+
+          ### 📝 Summary
+          [Your 4-6 sentence summary here]
+
+          ### 🔍 Key Engineering Insights
+          1. [First concrete insight]
+          2. [Second concrete insight]
+          3. [Third concrete insight]
+
+          ### 🏷️ Tags
+          `[tag-1]` `[tag-2]` `[tag-3]`"""
+
+                  groq_response = requests.post(
+                      "https://api.groq.com/openai/v1/chat/completions",
+                      headers={
+                          "Authorization": f"Bearer {groq_key}",
+                          "Content-Type": "application/json",
+                      },
+                      json={
+                          "model": "llama-3.3-70b-versatile",
+                          "messages": [
+                              {"role": "system", "content": "You are a senior AI engineer writing precise, technical research notes."},
+                              {"role": "user", "content": groq_prompt},
+                          ],
+                          "temperature": 0.3,
+                          "max_tokens": 1024,
+                      },
+                      timeout=60,
+                  )
+                  groq_response.raise_for_status()
+                  groq_data = groq_response.json()
+
+                  llm_output = groq_data["choices"][0]["message"]["content"].strip()
+                  print("Groq response received successfully")
+
+                  # Build the full entry
+                  entry_md = f"""
+          ---
+
+          {week_str}
+
+          ### 📄 Source
+          - **Title:** {title}
+          - **Author(s) / Lab:** Identified via Tavily search
+          - **Type:** Research article / Engineering blog
+          - **URL:** {url}
+          - **Published:** {date_str}
+
+          {llm_output}
+
+          ---"""
+
+              except Exception as e:
+                  print(f"Groq API error: {e}")
+                  api_failed = True
+
+          # --- FALLBACK ---
+          if api_failed or entry_md is None:
+              print("Using fallback entry")
+              entry_md = f"""
+          ---
+
+          {week_str}
+
+          ### 📄 Source
+          - **Title:** API Unavailable — Manual Note
+          - **Type:** Fallback entry
+
+          ### 📝 Summary
+          Weekly research pipeline encountered an API error this cycle. This entry serves as a placeholder. The system will retry next Sunday with the same topic slot.
+
+          ### 🔍 Key Engineering Insights
+          1. LLMOps systems must handle upstream API failures gracefully with fallbacks and alerting.
+          2. Idempotent pipeline design prevents duplicate entries on retry.
+          3. Observability into automation failures is itself a production engineering concern.
+
+          ### 🏷️ Tags
+          `llmops` `reliability` `automation`
+
+          ---"""
+              # Don't advance the topic index on failure — retry same topic next week
+          else:
+              # Advance topic index on success
+              stats["current_week_index"] = (current_index + 1) % len(topics)
+              stats["last_weekly_topic"] = topic_name
+              if topic_name.lower().replace(" & ", "-").replace(" ", "-") not in [t.lower() for t in stats.get("topics_covered", [])]:
+                  stats.setdefault("topics_covered", []).append(topic_name)
+
+          # --- STEP 3: Append to weekly_ai_notes.md ---
+          with open("weekly_ai_notes.md", "a") as f:
+              f.write(entry_md)
+              f.write("\n")
+
+          # --- STEP 4: Update stats ---
+          stats["weeks_active"] = stats.get("weeks_active", 0) + 1
+          stats["last_updated"] = date_str
+
+          with open("stats.json", "w") as f:
+              json.dump(stats, f, indent=2)
+              f.write("\n")
+
+          print(f"Weekly entry added for {date_str} — topic: {topic_name}")
+          PYTHON_SCRIPT
+
+      - name: Commit and push
+        run: |
+          git config user.name "Ebraheem Gillani"
+          git config user.email "ebraheem@users.noreply.github.com"
+          git add weekly_ai_notes.md stats.json
+          DATE=$(date +%Y-%m-%d)
+          TOPIC=$(python3 -c "import json; print(json.load(open('stats.json')).get('last_weekly_topic', 'AI Research'))")
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          git commit -m "research: weekly AI notes [${DATE}] — ${TOPIC}"
+          git push

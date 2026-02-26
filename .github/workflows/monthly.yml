@@ -1,0 +1,175 @@
+name: Monthly Digest
+
+on:
+  schedule:
+    - cron: '0 10 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  monthly-digest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate monthly digest
+        run: |
+          python3 << 'PYTHON_SCRIPT'
+          import json
+          import datetime
+          import re
+          import sys
+
+          today = datetime.date.today()
+          # We generate the digest for the PREVIOUS month
+          first_of_this_month = today.replace(day=1)
+          last_month_end = first_of_this_month - datetime.timedelta(days=1)
+          target_month = last_month_end.strftime("%Y-%m")
+          target_month_display = last_month_end.strftime("%Y-%m")
+          month_header = f"## Month of {target_month_display}"
+
+          # Check if this month's digest already exists (idempotent)
+          with open("monthly_digest.md", "r") as f:
+              existing_digest = f.read()
+          if month_header in existing_digest:
+              print(f"Digest for {target_month_display} already exists. Skipping.")
+              sys.exit(0)
+
+          # --- Count daily log entries for the target month ---
+          with open("daily_log.md", "r") as f:
+              daily_lines = f.readlines()
+
+          days_logged = 0
+          for line in daily_lines:
+              line = line.strip()
+              if line.startswith(f"- {target_month}"):
+                  days_logged += 1
+
+          # --- Count weekly notes for the target month ---
+          with open("weekly_ai_notes.md", "r") as f:
+              weekly_content = f.read()
+
+          # Find all "## Week of YYYY-MM-DD" headers where YYYY-MM matches target month
+          week_pattern = rf"## Week of ({target_month}-\d{{2}})"
+          weekly_entries = re.findall(week_pattern, weekly_content)
+          weeks_added = len(weekly_entries)
+
+          # --- Extract tags from the target month's weekly entries ---
+          # Split by week headers, find entries for target month
+          all_tags = []
+          sections = weekly_content.split("## Week of ")
+          for section in sections:
+              if section.startswith(target_month):
+                  # Extract tags from this section
+                  tag_matches = re.findall(r'`([^`]+)`', section)
+                  # Filter to only tags in the Tags section
+                  lines = section.split("\n")
+                  in_tags = False
+                  for line in lines:
+                      if "### 🏷️ Tags" in line:
+                          in_tags = True
+                          continue
+                      if in_tags and line.startswith("###"):
+                          in_tags = False
+                      if in_tags:
+                          found = re.findall(r'`([^`]+)`', line)
+                          all_tags.extend(found)
+
+          unique_tags = list(dict.fromkeys(all_tags))  # preserve order, dedupe
+
+          # --- Find most valuable source ---
+          best_title = "N/A"
+          best_url = ""
+          for section in sections:
+              if section.startswith(target_month):
+                  title_match = re.search(r'\*\*Title:\*\*\s*(.+)', section)
+                  url_match = re.search(r'\*\*URL:\*\*\s*(.+)', section)
+                  if title_match and "API Unavailable" not in title_match.group(1):
+                      best_title = title_match.group(1).strip()
+                      best_url = url_match.group(1).strip() if url_match else ""
+
+          # --- Build key themes ---
+          themes = []
+          if unique_tags:
+              # Group tags into theme bullet points
+              tag_groups = {}
+              for tag in unique_tags:
+                  key = tag.split("-")[0] if "-" in tag else tag
+                  tag_groups.setdefault(key, []).append(tag)
+
+              for key, tags in list(tag_groups.items())[:5]:
+                  themes.append(f"Explored topics related to: {', '.join(tags)}")
+
+          if not themes:
+              themes = ["No weekly research entries were recorded this month."]
+
+          # --- Read stats ---
+          with open("stats.json", "r") as f:
+              stats = json.load(f)
+
+          topics_str = ", ".join(stats.get("topics_covered", [])) if stats.get("topics_covered") else "None yet"
+
+          # --- Build digest entry ---
+          themes_md = "\n".join([f"- {t}" for t in themes])
+          source_md = f"[{best_title}]({best_url})" if best_url else best_title
+
+          digest_entry = f"""
+          ---
+
+          {month_header}
+
+          ### 📊 Activity Summary
+          - Days logged: {days_logged}
+          - Weekly notes added: {weeks_added}
+          - Topics covered: {topics_str}
+
+          ### 🧠 Key Themes This Month
+          {themes_md}
+
+          ### 🔗 Most Valuable Source This Month
+          {source_md}
+
+          ---"""
+
+          # Remove leading indentation from heredoc
+          import textwrap
+          digest_entry = textwrap.dedent(digest_entry)
+
+          # Append to monthly_digest.md
+          with open("monthly_digest.md", "a") as f:
+              f.write(digest_entry)
+              f.write("\n")
+
+          # Update stats
+          stats["months_active"] = stats.get("months_active", 0) + 1
+          stats["last_updated"] = today.strftime("%Y-%m-%d")
+
+          with open("stats.json", "w") as f:
+              json.dump(stats, f, indent=2)
+              f.write("\n")
+
+          print(f"Monthly digest generated for {target_month_display}")
+          print(f"  Days logged: {days_logged}")
+          print(f"  Weekly notes: {weeks_added}")
+          print(f"  Tags found: {unique_tags}")
+          PYTHON_SCRIPT
+
+      - name: Commit and push
+        run: |
+          git config user.name "Ebraheem Gillani"
+          git config user.email "ebraheem@users.noreply.github.com"
+          git add monthly_digest.md stats.json
+          DATE=$(date +%Y-%m)
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          git commit -m "chore: monthly digest [${DATE}]"
+          git push

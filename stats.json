@@ -1,0 +1,9 @@
+{
+  "days_active": 7,
+  "weeks_active": 2,
+  "months_active": 0,
+  "topics_covered": ["llm-architecture", "rag"],
+  "last_updated": "2026-02-26",
+  "last_weekly_topic": "RAG Systems",
+  "current_week_index": 2
+}

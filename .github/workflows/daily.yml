@@ -1,0 +1,154 @@
+name: Daily AI Log
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  daily-log:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate and append daily log entry
+        run: |
+          python3 << 'PYTHON_SCRIPT'
+          import json
+          import datetime
+          import hashlib
+
+          today = datetime.date.today()
+          date_str = today.strftime("%Y-%m-%d")
+
+          # Check if today's entry already exists (idempotent)
+          with open("daily_log.md", "r") as f:
+              existing = f.read()
+          if f"- {date_str}:" in existing:
+              print(f"Entry for {date_str} already exists. Skipping.")
+              import sys; sys.exit(0)
+
+          # Comprehensive pool of daily log entries across all categories
+          entries = [
+              # LLM & Inference
+              "Reviewed DeepSeek-R2 architecture vs Qwen3-72B inference efficiency tradeoffs — focused on MoE routing strategies and their impact on per-token latency",
+              "Compared vLLM vs TGI throughput benchmarks on A100 for production serving — measured p50/p95 latency across varying batch sizes",
+              "Studied speculative decoding and its effect on TTFT (time-to-first-token) — evaluated draft model selection strategies for Llama 4 variants",
+              "Tested structured outputs with constrained decoding using Outlines library — benchmarked JSON schema adherence rates across model sizes",
+              "Analyzed KV-cache compression techniques for long-context inference — compared PagedAttention vs StreamingLLM approaches",
+              "Profiled memory usage patterns for Llama-4-Scout 109B across different quantization levels (FP16, INT8, INT4)",
+              "Evaluated prefix caching strategies for multi-turn chatbot deployments — measured cache hit rates under production traffic patterns",
+              "Studied ring attention mechanism for distributed long-context inference across multiple GPUs",
+              "Benchmarked GGUF vs AWQ quantization for edge deployment of Mistral-7B on consumer hardware",
+              "Investigated continuous batching optimizations in vLLM for heterogeneous request length distributions",
+              # RAG & Retrieval
+              "Implemented hybrid BM25 + dense retrieval with Reciprocal Rank Fusion (RRF) scoring — tested on a 50K document corpus",
+              "Evaluated late chunking vs semantic chunking strategies for long-document RAG — tested with legal contract corpus",
+              "Benchmarked Pinecone serverless vs Milvus for 10M vector workload — compared query latency and recall@10 metrics",
+              "Tested ColBERT v2 re-ranking against cross-encoder baselines — measured MRR improvement on MS MARCO passage ranking",
+              "Implemented parent-child document retrieval strategy with metadata filtering for multi-tenant RAG system",
+              "Evaluated BGE-M3 multilingual embeddings vs OpenAI text-embedding-3-large for cross-lingual retrieval accuracy",
+              "Studied contextual retrieval with document-level context prepending — measured impact on chunk relevance scores",
+              "Tested hypothetical document embedding (HyDE) approach for improving zero-shot retrieval on domain-specific queries",
+              "Compared HNSW vs IVF-PQ index strategies for billion-scale vector search with latency constraints",
+              "Implemented query decomposition pipeline for complex multi-hop RAG questions with intermediate retrieval steps",
+              # Agentic Systems
+              "Designed LangGraph state machine for a multi-turn document Q&A agent — modeled state transitions for retrieval and generation nodes",
+              "Debugged token budget exhaustion in nested AutoGen agent conversation — implemented token counting middleware",
+              "Studied A2A (Agent-to-Agent) protocol vs MCP (Model Context Protocol) differences — mapped capability overlap",
+              "Implemented human-in-the-loop approval checkpoint in CrewAI workflow — tested with financial analysis agent pipeline",
+              "Built tool-use evaluation harness for agentic systems — measured tool selection accuracy across 200 test scenarios",
+              "Designed retry and fallback patterns for unreliable tool calls in production agent deployments",
+              "Implemented structured planning module using ReAct framework with self-reflection for complex task decomposition",
+              "Studied memory architectures for long-running agents — compared sliding window vs summarization-based approaches",
+              "Evaluated agent observability patterns using LangSmith traces — identified common failure modes in multi-step workflows",
+              "Built sandboxed code execution environment for autonomous coding agents with resource limits and timeout controls",
+              # LLMOps & Evaluation
+              "Set up RAGAS evaluation pipeline for faithfulness and context recall metrics — integrated with CI/CD for nightly runs",
+              "Configured LangSmith tracing for production prompt debugging — set up alerting on latency regression and error rate spikes",
+              "Wrote regression test harness for prompt template changes before deployment — baseline comparison using semantic similarity",
+              "Reviewed hallucination detection techniques: SelfCheckGPT vs NLI-based approaches — benchmarked on TruthfulQA dataset",
+              "Implemented prompt versioning system with A/B testing support — tracked performance metrics across prompt iterations",
+              "Designed cost monitoring dashboard for multi-model inference pipeline — tracked per-request cost by model and endpoint",
+              "Built automated data flywheel pipeline: production logs → annotation → fine-tuning dataset → model update",
+              "Evaluated LLM-as-a-Judge consistency using inter-rater reliability metrics — compared GPT-4o vs Claude 3.5 as evaluators",
+              "Implemented canary deployment pattern for LLM model updates with automatic rollback on quality regression",
+              "Set up structured logging and distributed tracing for a multi-service RAG pipeline using OpenTelemetry",
+              # AI Safety & Alignment
+              "Reviewed NIST AI RMF 1.0 controls for agentic AI deployment — mapped GOVERN and MAP functions to production checklist",
+              "Studied Constitutional AI approach vs RLHF for instruction following — compared training stability and alignment tax",
+              "Implemented output filtering guardrails using Guardrails-AI library — configured validators for PII and toxicity detection",
+              "Read Anthropic's responsible scaling policy and compared to DeepMind's approach — documented key policy divergences",
+              "Evaluated prompt injection defense strategies — tested system prompt isolation and input sanitization patterns",
+              "Studied red-teaming methodologies for LLM safety evaluation — reviewed OWASP Top 10 for LLM Applications",
+              "Implemented content classification guardrails with multi-label toxicity detection for user-facing chatbot",
+              "Reviewed EU AI Act compliance requirements for high-risk AI systems — mapped to technical implementation controls",
+              "Evaluated adversarial robustness of instruction-tuned models using automated jailbreak detection benchmarks",
+              "Studied watermarking techniques for LLM-generated text — compared statistical and learned watermark approaches",
+          ]
+
+          # Use date-based deterministic selection to ensure variety
+          seed = int(hashlib.md5(date_str.encode()).hexdigest(), 16)
+          # Also factor in month to avoid repeats within the same month
+          month_key = today.strftime("%Y-%m")
+          month_seed = int(hashlib.md5(month_key.encode()).hexdigest(), 16)
+
+          # Get entries used this month
+          used_this_month = set()
+          for line in existing.split("\n"):
+              if line.startswith("- ") and ":" in line:
+                  parts = line.split(": ", 1)
+                  if len(parts) == 2:
+                      entry_date = parts[0].replace("- ", "")
+                      if entry_date.startswith(month_key):
+                          used_this_month.add(parts[1].split(" — ")[0] if " — " in parts[1] else parts[1][:60])
+
+          # Select entry ensuring no repeat within the month
+          selected_idx = seed % len(entries)
+          attempts = 0
+          while attempts < len(entries):
+              candidate = entries[selected_idx]
+              candidate_key = candidate.split(" — ")[0] if " — " in candidate else candidate[:60]
+              if candidate_key not in used_this_month:
+                  break
+              selected_idx = (selected_idx + 1) % len(entries)
+              attempts += 1
+
+          entry = entries[selected_idx]
+
+          # Append to daily_log.md
+          with open("daily_log.md", "a") as f:
+              f.write(f"\n- {date_str}: {entry}")
+
+          # Update stats.json
+          with open("stats.json", "r") as f:
+              stats = json.load(f)
+          stats["days_active"] = stats.get("days_active", 0) + 1
+          stats["last_updated"] = date_str
+          with open("stats.json", "w") as f:
+              json.dump(stats, f, indent=2)
+              f.write("\n")
+
+          print(f"Added daily log entry for {date_str}")
+          PYTHON_SCRIPT
+
+      - name: Commit and push
+        run: |
+          git config user.name "Ebraheem Gillani"
+          git config user.email "ebraheem@users.noreply.github.com"
+          git add daily_log.md stats.json
+          DATE=$(date +%Y-%m-%d)
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          git commit -m "chore: daily log [${DATE}]"
+          git push
