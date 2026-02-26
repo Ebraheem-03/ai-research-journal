@@ -47,3 +47,27 @@ This paper introduces Graph RAG, a retrieval-augmented generation approach that 
 `rag` `knowledge-graphs` `query-focused-summarization`
 
 ---
+
+---
+
+## Week of 2026-02-26
+
+### 📄 Source
+- **Title:** Multi-Agent Orchestration in Production: The Playbook for ...
+- **Author(s) / Lab:** Identified via Tavily search
+- **Type:** Research article / Engineering blog
+- **URL:** https://www.linkedin.com/pulse/multi-agent-orchestration-production-playbook-reliable-nick-gupta-azcwe
+- **Published:** 2026-02-26
+
+### 📝 Summary
+The article discusses the importance of distinguishing between agent orchestration and workflow orchestration in multi-agent systems. Agent orchestration refers to the use of large language models (LLMs) to drive decisions and creativity, while workflow orchestration focuses on deterministic execution paths, retries, and state management. A modern multi-agent stack typically consists of graph-based or stateful orchestration, lightweight coordination primitives, and a clear separation of responsibilities among agents. The use of knowledge graphs and auditable evaluation systems can also enhance the reliability and transparency of multi-agent systems. The article highlights the need for a structured approach to building multi-agent systems, rather than relying on ad-hoc prompt engineering. By embracing this structure, developers can create more robust and maintainable systems.
+
+### 🔍 Key Engineering Insights
+1. When designing a multi-agent system, it's essential to separate agent orchestration (LLM-driven decisions) from workflow orchestration (deterministic execution paths) to ensure reliable and efficient operation.
+2. Using a graph-based or stateful orchestration approach, such as LangGraph, can help manage complex flows and stateful interactions between agents.
+3. Implementing a clear separation of responsibilities among agents, including roles like Planner, Specialist, Verifier, Executor, and Supervisor, can help distribute decision-making and execution tasks effectively.
+
+### 🏷️ Tags
+`multi-agent-systems` `large-language-models` `workflow-orchestration`
+
+---
