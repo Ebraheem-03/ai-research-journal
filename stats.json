@@ -1,5 +1,5 @@
 {
-  "days_active": 7,
+  "days_active": 8,
   "weeks_active": 3,
   "months_active": 1,
   "topics_covered": [
@@ -7,7 +7,7 @@
     "rag",
     "Agentic AI"
   ],
-  "last_updated": "2026-02-26",
+  "last_updated": "2026-02-27",
   "last_weekly_topic": "Agentic AI",
   "current_week_index": 3
 }
