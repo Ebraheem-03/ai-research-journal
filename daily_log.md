@@ -13,3 +13,4 @@
 - 2026-02-26: Evaluated late chunking vs semantic chunking strategies for long-document RAG — tested with legal contract corpus measuring retrieval precision@10
 
 - 2026-02-27: Implemented structured planning module using ReAct framework with self-reflection for complex task decomposition
+- 2026-02-28: Designed retry and fallback patterns for unreliable tool calls in production agent deployments
