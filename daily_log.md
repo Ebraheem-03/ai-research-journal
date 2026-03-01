@@ -14,3 +14,4 @@
 
 - 2026-02-27: Implemented structured planning module using ReAct framework with self-reflection for complex task decomposition
 - 2026-02-28: Designed retry and fallback patterns for unreliable tool calls in production agent deployments
+- 2026-03-01: Reviewed NIST AI RMF 1.0 controls for agentic AI deployment — mapped GOVERN and MAP functions to production checklist
