@@ -1,13 +1,14 @@
 {
   "days_active": 10,
-  "weeks_active": 3,
+  "weeks_active": 4,
   "months_active": 1,
   "topics_covered": [
     "llm-architecture",
     "rag",
-    "Agentic AI"
+    "Agentic AI",
+    "LLMOps & Evaluation"
   ],
   "last_updated": "2026-03-01",
-  "last_weekly_topic": "Agentic AI",
-  "current_week_index": 3
+  "last_weekly_topic": "LLMOps & Evaluation",
+  "current_week_index": 4
 }
