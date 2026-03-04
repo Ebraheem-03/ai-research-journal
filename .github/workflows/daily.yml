@@ -145,8 +145,8 @@ jobs:
 
       - name: Commit and push
         run: |
-          git config user.name "Ebraheem Gillani"
-          git config user.email "ebraheem@users.noreply.github.com"
+          git config user.name "Ebraheem-03"
+          git config user.email "160736320+Ebraheem-03@users.noreply.github.com"
           git add daily_log.md stats.json
           DATE=$(date +%Y-%m-%d)
           git diff --cached --quiet && echo "No changes to commit" && exit 0
