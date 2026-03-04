@@ -17,3 +17,4 @@
 - 2026-03-01: Reviewed NIST AI RMF 1.0 controls for agentic AI deployment — mapped GOVERN and MAP functions to production checklist
 - 2026-03-02: Evaluated LLM-as-a-Judge consistency using inter-rater reliability metrics — compared GPT-4o vs Claude 3.5 as evaluators
 - 2026-03-03: Designed retry and fallback patterns for unreliable tool calls in production agent deployments
+- 2026-03-04: Studied speculative decoding and its effect on TTFT (time-to-first-token) — evaluated draft model selection strategies for Llama 4 variants
