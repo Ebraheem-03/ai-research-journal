@@ -19,3 +19,4 @@
 - 2026-03-03: Designed retry and fallback patterns for unreliable tool calls in production agent deployments
 - 2026-03-04: Studied speculative decoding and its effect on TTFT (time-to-first-token) — evaluated draft model selection strategies for Llama 4 variants
 - 2026-03-05: Designed cost monitoring dashboard for multi-model inference pipeline — tracked per-request cost by model and endpoint
+- 2026-03-06: Implemented canary deployment pattern for LLM model updates with automatic rollback on quality regression
