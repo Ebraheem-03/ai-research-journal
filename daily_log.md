@@ -23,3 +23,4 @@
 - 2026-03-07: Evaluated adversarial robustness of instruction-tuned models using automated jailbreak detection benchmarks
 - 2026-03-08: Debugged token budget exhaustion in nested AutoGen agent conversation — implemented token counting middleware
 - 2026-03-09: Implemented structured planning module using ReAct framework with self-reflection for complex task decomposition
+- 2026-03-10: Studied Constitutional AI approach vs RLHF for instruction following — compared training stability and alignment tax
