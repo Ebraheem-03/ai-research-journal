@@ -25,3 +25,4 @@
 - 2026-03-09: Implemented structured planning module using ReAct framework with self-reflection for complex task decomposition
 - 2026-03-10: Studied Constitutional AI approach vs RLHF for instruction following — compared training stability and alignment tax
 - 2026-03-11: Studied memory architectures for long-running agents — compared sliding window vs summarization-based approaches
+- 2026-03-12: Studied contextual retrieval with document-level context prepending — measured impact on chunk relevance scores
