@@ -26,3 +26,4 @@
 - 2026-03-10: Studied Constitutional AI approach vs RLHF for instruction following — compared training stability and alignment tax
 - 2026-03-11: Studied memory architectures for long-running agents — compared sliding window vs summarization-based approaches
 - 2026-03-12: Studied contextual retrieval with document-level context prepending — measured impact on chunk relevance scores
+- 2026-03-13: Configured LangSmith tracing for production prompt debugging — set up alerting on latency regression and error rate spikes
