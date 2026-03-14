@@ -1,5 +1,5 @@
 {
-  "days_active": 22,
+  "days_active": 23,
   "weeks_active": 5,
   "months_active": 2,
   "topics_covered": [
@@ -9,7 +9,7 @@
     "LLMOps & Evaluation",
     "AI Safety & Alignment"
   ],
-  "last_updated": "2026-03-13",
+  "last_updated": "2026-03-14",
   "last_weekly_topic": "AI Safety & Alignment",
   "current_week_index": 5
 }
