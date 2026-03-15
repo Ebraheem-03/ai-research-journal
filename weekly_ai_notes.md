@@ -119,3 +119,27 @@ The article discusses the limitations of current approaches to aligning large la
 `large_language_models` `alignment_techniques` `safety_guarantees`
 
 ---
+
+---
+
+## Week of 2026-03-15
+
+### 📄 Source
+- **Title:** Top 10 Open Source LLMs 2026: DeepSeek Revolution Guide
+- **Author(s) / Lab:** Identified via Tavily search
+- **Type:** Research article / Engineering blog
+- **URL:** https://o-mega.ai/articles/top-10-open-source-llms-the-deepseek-revolution-2026
+- **Published:** 2026-03-15
+
+### 📝 Summary
+The article discusses recent developments in open-source Large Language Models (LLMs), highlighting their improvements in fluency, multilingual understanding, and coding ability. Specifically, it mentions the Llama 3.3 model, which has shown refinement in instruction-following and factual accuracy, making it suitable for tasks like writing assistance and interactive chat. The article also touches on the Phi-3 model, which excels in efficiency for fine-tuning due to its smaller size, allowing for quick adaptation to specific domains on a single GPU instance. Additionally, the H2O model is noted for its ease of fine-tuning using techniques like low-rank adaptation (LoRA), enabling teams to adapt the model to their domain without extensive ML expertise. These models can be utilized for various applications, including classification tasks and conversational systems. The ability to fine-tune these models on custom datasets is a significant advantage for domain-specific use cases.
+
+### 🔍 Key Engineering Insights
+1. When selecting an LLM for a specific task, consider the trade-off between model size and fine-tuning efficiency, as smaller models like Phi-3 can be more cost-effective and quicker to adapt to new data.
+2. Utilizing techniques like low-rank adaptation (LoRA) can simplify the fine-tuning process for LLMs, making it more accessible to teams without deep ML expertise, as seen in the H2O model.
+3. Fine-tuning an LLM on a small, domain-specific dataset can significantly improve its performance for that particular domain, as reported by teams that have fine-tuned models like H2O on their internal data.
+
+### 🏷️ Tags
+`large_language_models` `fine_tuning` `low_rank_adaptation`
+
+---
