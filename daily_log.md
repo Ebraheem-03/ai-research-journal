@@ -28,3 +28,4 @@
 - 2026-03-12: Studied contextual retrieval with document-level context prepending — measured impact on chunk relevance scores
 - 2026-03-13: Configured LangSmith tracing for production prompt debugging — set up alerting on latency regression and error rate spikes
 - 2026-03-14: Set up structured logging and distributed tracing for a multi-service RAG pipeline using OpenTelemetry
+- 2026-03-15: Studied ring attention mechanism for distributed long-context inference across multiple GPUs
