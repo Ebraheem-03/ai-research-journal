@@ -31,3 +31,4 @@
 - 2026-03-15: Studied ring attention mechanism for distributed long-context inference across multiple GPUs
 - 2026-03-16: Reviewed EU AI Act compliance requirements for high-risk AI systems — mapped to technical implementation controls
 - 2026-03-17: Benchmarked GGUF vs AWQ quantization for edge deployment of Mistral-7B on consumer hardware
+- 2026-03-18: Reviewed DeepSeek-R2 architecture vs Qwen3-72B inference efficiency tradeoffs — focused on MoE routing strategies and their impact on per-token latency
