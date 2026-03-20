@@ -33,3 +33,4 @@
 - 2026-03-17: Benchmarked GGUF vs AWQ quantization for edge deployment of Mistral-7B on consumer hardware
 - 2026-03-18: Reviewed DeepSeek-R2 architecture vs Qwen3-72B inference efficiency tradeoffs — focused on MoE routing strategies and their impact on per-token latency
 - 2026-03-19: Set up RAGAS evaluation pipeline for faithfulness and context recall metrics — integrated with CI/CD for nightly runs
+- 2026-03-20: Profiled memory usage patterns for Llama-4-Scout 109B across different quantization levels (FP16, INT8, INT4)

@@ -1,5 +1,5 @@
 {
-  "days_active": 28,
+  "days_active": 29,
   "weeks_active": 6,
   "months_active": 2,
   "topics_covered": [
@@ -10,7 +10,7 @@
     "AI Safety & Alignment",
     "Open Source Models"
   ],
-  "last_updated": "2026-03-19",
+  "last_updated": "2026-03-20",
   "last_weekly_topic": "Open Source Models",
   "current_week_index": 6
 }
