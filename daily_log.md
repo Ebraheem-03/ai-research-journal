@@ -34,3 +34,4 @@
 - 2026-03-18: Reviewed DeepSeek-R2 architecture vs Qwen3-72B inference efficiency tradeoffs — focused on MoE routing strategies and their impact on per-token latency
 - 2026-03-19: Set up RAGAS evaluation pipeline for faithfulness and context recall metrics — integrated with CI/CD for nightly runs
 - 2026-03-20: Profiled memory usage patterns for Llama-4-Scout 109B across different quantization levels (FP16, INT8, INT4)
+- 2026-03-21: Investigated continuous batching optimizations in vLLM for heterogeneous request length distributions
