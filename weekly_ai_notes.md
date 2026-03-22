@@ -143,3 +143,27 @@ The article discusses recent developments in open-source Large Language Models (
 `large_language_models` `fine_tuning` `low_rank_adaptation`
 
 ---
+
+---
+
+## Week of 2026-03-22
+
+### 📄 Source
+- **Title:** Speculative Decoding: Achieving 2-3x LLM Inference Speedup - Introl
+- **Author(s) / Lab:** Identified via Tavily search
+- **Type:** Research article / Engineering blog
+- **URL:** https://introl.com/blog/speculative-decoding-llm-inference-speedup-guide-2025
+- **Published:** 2026-03-22
+
+### 📝 Summary
+Speculative decoding is a technique that accelerates large language model (LLM) inference by leveraging unused GPU capacity. Traditional autoregressive generation produces tokens sequentially, underutilizing GPU resources. Speculative decoding exploits this unused capacity by generating multiple tokens in parallel, allowing for a 2-3x speedup without sacrificing accuracy. This technique has matured from an experimental optimization to a standard practice, with production-ready implementations available in frameworks like vLLM and TensorRT-LLM. To achieve optimal results, it is essential to track acceptance rates over time, retune as workload characteristics change, and evaluate new draft models and techniques. By applying speculative decoding, developers can significantly reduce LLM inference costs and latency.
+
+### 🔍 Key Engineering Insights
+1. To maximize the benefits of speculative decoding, it is crucial to select the right draft model, as different models can achieve varying levels of acceptance rates, with some methods like EAGLE approaching 80%.
+2. Developers should monitor and adjust speculative decoding parameters as workload characteristics change, ensuring optimal performance and minimizing potential drawbacks.
+3. When implementing speculative decoding, developers should consider the native support provided by frameworks like vLLM and TensorRT-LLM, as well as the specific GPU architecture, such as NVIDIA's H200, to achieve the best possible throughput improvements.
+
+### 🏷️ Tags
+`speculative_decoding` `llm_inference` `gpu_acceleration`
+
+---
