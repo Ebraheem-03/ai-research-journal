@@ -38,3 +38,4 @@
 - 2026-03-22: Built sandboxed code execution environment for autonomous coding agents with resource limits and timeout controls
 - 2026-03-23: Implemented output filtering guardrails using Guardrails-AI library — configured validators for PII and toxicity detection
 - 2026-03-24: Implemented content classification guardrails with multi-label toxicity detection for user-facing chatbot
+- 2026-03-25: Studied A2A (Agent-to-Agent) protocol vs MCP (Model Context Protocol) differences — mapped capability overlap
