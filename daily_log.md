@@ -39,3 +39,4 @@
 - 2026-03-23: Implemented output filtering guardrails using Guardrails-AI library — configured validators for PII and toxicity detection
 - 2026-03-24: Implemented content classification guardrails with multi-label toxicity detection for user-facing chatbot
 - 2026-03-25: Studied A2A (Agent-to-Agent) protocol vs MCP (Model Context Protocol) differences — mapped capability overlap
+- 2026-03-26: Evaluated agent observability patterns using LangSmith traces — identified common failure modes in multi-step workflows
