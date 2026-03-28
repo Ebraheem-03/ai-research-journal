@@ -41,3 +41,4 @@
 - 2026-03-25: Studied A2A (Agent-to-Agent) protocol vs MCP (Model Context Protocol) differences — mapped capability overlap
 - 2026-03-26: Evaluated agent observability patterns using LangSmith traces — identified common failure modes in multi-step workflows
 - 2026-03-27: Wrote regression test harness for prompt template changes before deployment — baseline comparison using semantic similarity
+- 2026-03-28: Reviewed hallucination detection techniques: SelfCheckGPT vs NLI-based approaches — benchmarked on TruthfulQA dataset
