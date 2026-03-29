@@ -1,6 +1,6 @@
 {
   "days_active": 38,
-  "weeks_active": 7,
+  "weeks_active": 8,
   "months_active": 2,
   "topics_covered": [
     "llm-architecture",
@@ -9,9 +9,10 @@
     "LLMOps & Evaluation",
     "AI Safety & Alignment",
     "Open Source Models",
-    "Inference Optimization"
+    "Inference Optimization",
+    "Vector Databases & Embeddings"
   ],
   "last_updated": "2026-03-29",
-  "last_weekly_topic": "Inference Optimization",
-  "current_week_index": 7
+  "last_weekly_topic": "Vector Databases & Embeddings",
+  "current_week_index": 0
 }

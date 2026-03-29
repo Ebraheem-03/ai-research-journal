@@ -167,3 +167,27 @@ Speculative decoding is a technique that accelerates large language model (LLM) 
 `speculative_decoding` `llm_inference` `gpu_acceleration`
 
 ---
+
+---
+
+## Week of 2026-03-29
+
+### 📄 Source
+- **Title:** Best Vector Databases in 2026: A Complete Comparison Guide
+- **Author(s) / Lab:** Identified via Tavily search
+- **Type:** Research article / Engineering blog
+- **URL:** https://www.firecrawl.dev/blog/best-vector-databases
+- **Published:** 2026-03-29
+
+### 📝 Summary
+The vector database landscape has expanded significantly, with a projected market growth from $1.73 billion in 2024 to $10.6 billion by 2032. This growth is driven by the adoption of RAG and semantic search in production applications. Open-source vector databases such as Milvus, Qdrant, Weaviate, and ChromaDB have gained popularity, with Milvus leading in GitHub stars. ChromaDB offers a Python API with a NumPy-like interface, allowing for easy integration and prototyping. The database's 2025 Rust rewrite has improved performance, with sub-100ms query times for RAG and ~50ms on 768-dim embeddings. Weaviate stands out for its hybrid search capabilities, combining vector similarity, keyword matching, and metadata filtering in a single query.
+
+### 🔍 Key Engineering Insights
+1. When building prototypes with fewer than 10 million vectors, ChromaDB's ease of use and moderate performance may be sufficient, allowing developers to focus on rapid prototyping and idea validation.
+2. For applications requiring hybrid search, Weaviate's native support for combining vector similarity, keyword matching, and metadata filtering can simplify query logic and improve overall system performance.
+3. To select the most suitable vector database for a specific use case, developers should utilize benchmarking tools like VectorDBBench to evaluate database performance with their production workload, query patterns, and hardware configuration.
+
+### 🏷️ Tags
+`vector-databases` `RAG` `semantic-search`
+
+---
