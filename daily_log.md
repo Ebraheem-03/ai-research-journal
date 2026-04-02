@@ -46,3 +46,4 @@
 - 2026-03-30: Implemented prompt versioning system with A/B testing support — tracked performance metrics across prompt iterations
 - 2026-03-31: Built automated data flywheel pipeline: production logs → annotation → fine-tuning dataset → model update
 - 2026-04-01: Tested structured outputs with constrained decoding using Outlines library — benchmarked JSON schema adherence rates across model sizes
+- 2026-04-02: Set up RAGAS evaluation pipeline for faithfulness and context recall metrics — integrated with CI/CD for nightly runs
