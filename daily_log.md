@@ -48,3 +48,4 @@
 - 2026-04-01: Tested structured outputs with constrained decoding using Outlines library — benchmarked JSON schema adherence rates across model sizes
 - 2026-04-02: Set up RAGAS evaluation pipeline for faithfulness and context recall metrics — integrated with CI/CD for nightly runs
 - 2026-04-03: Studied A2A (Agent-to-Agent) protocol vs MCP (Model Context Protocol) differences — mapped capability overlap
+- 2026-04-04: Implemented canary deployment pattern for LLM model updates with automatic rollback on quality regression
