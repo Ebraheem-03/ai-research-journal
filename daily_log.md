@@ -49,3 +49,4 @@
 - 2026-04-02: Set up RAGAS evaluation pipeline for faithfulness and context recall metrics — integrated with CI/CD for nightly runs
 - 2026-04-03: Studied A2A (Agent-to-Agent) protocol vs MCP (Model Context Protocol) differences — mapped capability overlap
 - 2026-04-04: Implemented canary deployment pattern for LLM model updates with automatic rollback on quality regression
+- 2026-04-05: Evaluated prefix caching strategies for multi-turn chatbot deployments — measured cache hit rates under production traffic patterns
