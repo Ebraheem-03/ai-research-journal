@@ -191,3 +191,27 @@ The vector database landscape has expanded significantly, with a projected marke
 `vector-databases` `RAG` `semantic-search`
 
 ---
+
+---
+
+## Week of 2026-04-05
+
+### 📄 Source
+- **Title:** Mixture of Experts in Large Language Models †: Corresponding author
+- **Author(s) / Lab:** Identified via Tavily search
+- **Type:** Research article / Engineering blog
+- **URL:** https://arxiv.org/html/2507.11181v2
+- **Published:** 2026-04-05
+
+### 📝 Summary
+The article discusses the scaling behavior of Mixture of Experts (MoE) models in large language models, particularly under memory constraints. By incorporating active parameter counts, dataset sizes, and expert configurations, the study shows that MoE models can be more memory-efficient than dense models. Empirical evaluations support this advantage up to 5B parameters, providing guidance for efficient training in constrained environments. MoE models can also improve scalability with rare token handling and parameter efficiency through techniques like entropy-aware routing and low-rank adaptation. The article highlights the potential of MoE as a credible scaling alternative to dense transformers. The results demonstrate the importance of considering expert utilization and composition in MoE design.
+
+### 🔍 Key Engineering Insights
+1. To improve memory efficiency in large language models, consider using MoE models with optimized expert configurations and active parameter counts.
+2. Entropy-aware routing can be used to balance expert utilization and improve efficiency in language modeling, particularly for rare tokens.
+3. Low-rank adaptation techniques, such as L-MoE, can be used to unify MoE and LoRA in an end-to-end trainable framework, improving parameter efficiency and dynamic skill composition.
+
+### 🏷️ Tags
+`mixture_of_experts` `large_language_models` `efficient_training`
+
+---
