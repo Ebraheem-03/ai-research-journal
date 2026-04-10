@@ -54,3 +54,4 @@
 - 2026-04-07: Benchmarked Pinecone serverless vs Milvus for 10M vector workload — compared query latency and recall@10 metrics
 - 2026-04-08: Studied memory architectures for long-running agents — compared sliding window vs summarization-based approaches
 - 2026-04-09: Implemented prompt versioning system with A/B testing support — tracked performance metrics across prompt iterations
+- 2026-04-10: Implemented human-in-the-loop approval checkpoint in CrewAI workflow — tested with financial analysis agent pipeline
