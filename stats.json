@@ -1,6 +1,6 @@
 {
   "days_active": 52,
-  "weeks_active": 9,
+  "weeks_active": 10,
   "months_active": 3,
   "topics_covered": [
     "llm-architecture",
@@ -11,9 +11,10 @@
     "Open Source Models",
     "Inference Optimization",
     "Vector Databases & Embeddings",
-    "LLM Architecture & Scaling"
+    "LLM Architecture & Scaling",
+    "RAG Systems"
   ],
   "last_updated": "2026-04-12",
-  "last_weekly_topic": "LLM Architecture & Scaling",
-  "current_week_index": 1
+  "last_weekly_topic": "RAG Systems",
+  "current_week_index": 2
 }
