@@ -56,3 +56,4 @@
 - 2026-04-09: Implemented prompt versioning system with A/B testing support — tracked performance metrics across prompt iterations
 - 2026-04-10: Implemented human-in-the-loop approval checkpoint in CrewAI workflow — tested with financial analysis agent pipeline
 - 2026-04-11: Implemented output filtering guardrails using Guardrails-AI library — configured validators for PII and toxicity detection
+- 2026-04-12: Reviewed hallucination detection techniques: SelfCheckGPT vs NLI-based approaches — benchmarked on TruthfulQA dataset
