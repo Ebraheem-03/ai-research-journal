@@ -60,3 +60,4 @@
 - 2026-04-13: Configured LangSmith tracing for production prompt debugging — set up alerting on latency regression and error rate spikes
 - 2026-04-14: Studied ring attention mechanism for distributed long-context inference across multiple GPUs
 - 2026-04-15: Evaluated late chunking vs semantic chunking strategies for long-document RAG — tested with legal contract corpus
+- 2026-04-16: Studied speculative decoding and its effect on TTFT (time-to-first-token) — evaluated draft model selection strategies for Llama 4 variants
