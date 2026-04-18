@@ -62,3 +62,4 @@
 - 2026-04-15: Evaluated late chunking vs semantic chunking strategies for long-document RAG — tested with legal contract corpus
 - 2026-04-16: Studied speculative decoding and its effect on TTFT (time-to-first-token) — evaluated draft model selection strategies for Llama 4 variants
 - 2026-04-17: Benchmarked GGUF vs AWQ quantization for edge deployment of Mistral-7B on consumer hardware
+- 2026-04-18: Investigated continuous batching optimizations in vLLM for heterogeneous request length distributions
