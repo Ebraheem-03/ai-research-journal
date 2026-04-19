@@ -239,3 +239,27 @@ The article "Evaluating Chunking Strategies For Retrieval-Augmented Generation i
 `information_retrieval` `retrieval_augmented_generation` `chunking_strategies`
 
 ---
+
+---
+
+## Week of 2026-04-19
+
+### 📄 Source
+- **Title:** Best Multi-Agent Frameworks in 2026: LangGraph, CrewAI, OpenAI ...
+- **Author(s) / Lab:** Identified via Tavily search
+- **Type:** Research article / Engineering blog
+- **URL:** https://gurusup.com/blog/best-multi-agent-frameworks-2026
+- **Published:** 2026-04-19
+
+### 📝 Summary
+The article discusses various multi-agent frameworks, including LangGraph, CrewAI, OpenAI SDK, AutoGen/AG2, Google ADK, and Claude SDK. These frameworks differ in their orchestration models, with graph-based, role-based, and hierarchical approaches being used. State management also varies, with some frameworks using checkpointing, ephemeral context variables, or event-sourced state. The communication patterns used by these frameworks include handoffs, shared memory, and message queues. Understanding these differences is crucial for selecting the appropriate framework for a specific use case. The frameworks' model dependencies range from fully model-agnostic to being optimized for specific models.
+
+### 🔍 Key Engineering Insights
+1. When choosing a multi-agent framework, consider the trade-offs between graph-based, role-based, and hierarchical orchestration models, as each has implications for scalability, flexibility, and complexity.
+2. The state management approach used by a framework can significantly impact the reliability and performance of multi-agent systems, with checkpointing and ephemeral context variables offering different advantages and disadvantages.
+3. The communication pattern used by a framework, such as handoffs or shared memory, can affect the overhead and latency of agent interactions, and should be selected based on the specific requirements of the application.
+
+### 🏷️ Tags
+`multi-agent-systems` `orchestration-models` `state-management`
+
+---

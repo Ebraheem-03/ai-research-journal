@@ -1,6 +1,6 @@
 {
   "days_active": 59,
-  "weeks_active": 10,
+  "weeks_active": 11,
   "months_active": 3,
   "topics_covered": [
     "llm-architecture",
@@ -12,9 +12,10 @@
     "Inference Optimization",
     "Vector Databases & Embeddings",
     "LLM Architecture & Scaling",
-    "RAG Systems"
+    "RAG Systems",
+    "Agentic AI"
   ],
   "last_updated": "2026-04-19",
-  "last_weekly_topic": "RAG Systems",
-  "current_week_index": 2
+  "last_weekly_topic": "Agentic AI",
+  "current_week_index": 3
 }
