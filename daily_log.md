@@ -64,3 +64,4 @@
 - 2026-04-17: Benchmarked GGUF vs AWQ quantization for edge deployment of Mistral-7B on consumer hardware
 - 2026-04-18: Investigated continuous batching optimizations in vLLM for heterogeneous request length distributions
 - 2026-04-19: Built tool-use evaluation harness for agentic systems — measured tool selection accuracy across 200 test scenarios
+- 2026-04-20: Designed retry and fallback patterns for unreliable tool calls in production agent deployments
