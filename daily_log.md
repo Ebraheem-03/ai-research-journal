@@ -65,3 +65,4 @@
 - 2026-04-18: Investigated continuous batching optimizations in vLLM for heterogeneous request length distributions
 - 2026-04-19: Built tool-use evaluation harness for agentic systems — measured tool selection accuracy across 200 test scenarios
 - 2026-04-20: Designed retry and fallback patterns for unreliable tool calls in production agent deployments
+- 2026-04-21: Built sandboxed code execution environment for autonomous coding agents with resource limits and timeout controls
