@@ -1,5 +1,5 @@
 {
-  "days_active": 61,
+  "days_active": 62,
   "weeks_active": 11,
   "months_active": 3,
   "topics_covered": [
@@ -15,7 +15,7 @@
     "RAG Systems",
     "Agentic AI"
   ],
-  "last_updated": "2026-04-21",
+  "last_updated": "2026-04-22",
   "last_weekly_topic": "Agentic AI",
   "current_week_index": 3
 }
