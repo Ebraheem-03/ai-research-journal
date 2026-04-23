@@ -67,3 +67,4 @@
 - 2026-04-20: Designed retry and fallback patterns for unreliable tool calls in production agent deployments
 - 2026-04-21: Built sandboxed code execution environment for autonomous coding agents with resource limits and timeout controls
 - 2026-04-22: Evaluated prompt injection defense strategies — tested system prompt isolation and input sanitization patterns
+- 2026-04-23: Implemented query decomposition pipeline for complex multi-hop RAG questions with intermediate retrieval steps
