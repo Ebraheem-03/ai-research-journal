@@ -70,3 +70,4 @@
 - 2026-04-23: Implemented query decomposition pipeline for complex multi-hop RAG questions with intermediate retrieval steps
 - 2026-04-24: Implemented structured planning module using ReAct framework with self-reflection for complex task decomposition
 - 2026-04-25: Evaluated agent observability patterns using LangSmith traces — identified common failure modes in multi-step workflows
+- 2026-04-26: Analyzed KV-cache compression techniques for long-context inference — compared PagedAttention vs StreamingLLM approaches
