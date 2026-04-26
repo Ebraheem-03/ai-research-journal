@@ -263,3 +263,27 @@ The article discusses various multi-agent frameworks, including LangGraph, CrewA
 `multi-agent-systems` `orchestration-models` `state-management`
 
 ---
+
+---
+
+## Week of 2026-04-26
+
+### 📄 Source
+- **Title:** LLM Hallucination Statistics 2026: Hidden Risks Now - SQ Magazine
+- **Author(s) / Lab:** Identified via Tavily search
+- **Type:** Research article / Engineering blog
+- **URL:** https://sqmagazine.co.uk/llm-hallucination-statistics/
+- **Published:** 2026-04-26
+
+### 📝 Summary
+The article presents various statistics on Large Language Model (LLM) hallucinations, including detection accuracy and rates. Automated detection tools can identify hallucinations with 85-92% accuracy, while human evaluators achieve 78% accuracy. LLM-based self-evaluation detects hallucinations in 60-75% of outputs, depending on prompt design. Ensemble detection models and fact-checking pipelines can improve accuracy and reduce undetected hallucinations. The article also highlights the impact of prompt design, contextual grounding, and instruction-tuned prompts on hallucination rates. Overall, the statistics suggest that hallucinations remain a significant challenge in LLMs, with rates exceeding 50% in some baseline models.
+
+### 🔍 Key Engineering Insights
+1. Using ensemble detection models can improve hallucination detection accuracy by 10-15% over single-model approaches, making it a viable strategy for reducing hallucination errors.
+2. Incorporating contextual grounding into LLMs can reduce hallucinations by 30-50% across enterprise use cases, highlighting the importance of providing relevant context to the model.
+3. Instruction-tuned prompts can lower hallucination rates to 15-25% in QA systems, suggesting that careful prompt design and instruction can help mitigate hallucination errors.
+
+### 🏷️ Tags
+`llm_hallucinations` `natural_language_processing` `ai_model_evaluation`
+
+---

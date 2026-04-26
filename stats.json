@@ -1,6 +1,6 @@
 {
   "days_active": 66,
-  "weeks_active": 11,
+  "weeks_active": 12,
   "months_active": 3,
   "topics_covered": [
     "llm-architecture",
@@ -13,9 +13,10 @@
     "Vector Databases & Embeddings",
     "LLM Architecture & Scaling",
     "RAG Systems",
-    "Agentic AI"
+    "Agentic AI",
+    "LLMOps & Evaluation"
   ],
   "last_updated": "2026-04-26",
-  "last_weekly_topic": "Agentic AI",
-  "current_week_index": 3
+  "last_weekly_topic": "LLMOps & Evaluation",
+  "current_week_index": 4
 }
