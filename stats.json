@@ -1,5 +1,5 @@
 {
-  "days_active": 66,
+  "days_active": 67,
   "weeks_active": 12,
   "months_active": 3,
   "topics_covered": [
@@ -16,7 +16,7 @@
     "Agentic AI",
     "LLMOps & Evaluation"
   ],
-  "last_updated": "2026-04-26",
+  "last_updated": "2026-04-27",
   "last_weekly_topic": "LLMOps & Evaluation",
   "current_week_index": 4
 }
