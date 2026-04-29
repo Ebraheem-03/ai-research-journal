@@ -73,3 +73,4 @@
 - 2026-04-26: Analyzed KV-cache compression techniques for long-context inference — compared PagedAttention vs StreamingLLM approaches
 - 2026-04-27: Evaluated adversarial robustness of instruction-tuned models using automated jailbreak detection benchmarks
 - 2026-04-28: Studied watermarking techniques for LLM-generated text — compared statistical and learned watermark approaches
+- 2026-04-29: Wrote regression test harness for prompt template changes before deployment — baseline comparison using semantic similarity
