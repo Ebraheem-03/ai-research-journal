@@ -74,3 +74,4 @@
 - 2026-04-27: Evaluated adversarial robustness of instruction-tuned models using automated jailbreak detection benchmarks
 - 2026-04-28: Studied watermarking techniques for LLM-generated text — compared statistical and learned watermark approaches
 - 2026-04-29: Wrote regression test harness for prompt template changes before deployment — baseline comparison using semantic similarity
+- 2026-04-30: Designed cost monitoring dashboard for multi-model inference pipeline — tracked per-request cost by model and endpoint
