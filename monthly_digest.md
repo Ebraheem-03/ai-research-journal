@@ -62,3 +62,24 @@ N/A
 [Best Vector Databases in 2026: A Complete Comparison Guide](https://www.firecrawl.dev/blog/best-vector-databases)
 
 ---
+
+---
+
+## Month of 2026-04
+
+### 📊 Activity Summary
+- Days logged: 30
+- Weekly notes added: 4
+- Topics covered: llm-architecture, rag, Agentic AI, LLMOps & Evaluation, AI Safety & Alignment, Open Source Models, Inference Optimization, Vector Databases & Embeddings, LLM Architecture & Scaling, RAG Systems, Agentic AI, LLMOps & Evaluation
+
+### 🧠 Key Themes This Month
+- Explored topics related to: mixture_of_experts
+- Explored topics related to: large_language_models
+- Explored topics related to: efficient_training
+- Explored topics related to: information_retrieval
+- Explored topics related to: retrieval_augmented_generation
+
+### 🔗 Most Valuable Source This Month
+[LLM Hallucination Statistics 2026: Hidden Risks Now - SQ Magazine](https://sqmagazine.co.uk/llm-hallucination-statistics/)
+
+---
