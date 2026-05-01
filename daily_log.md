@@ -75,3 +75,4 @@
 - 2026-04-28: Studied watermarking techniques for LLM-generated text — compared statistical and learned watermark approaches
 - 2026-04-29: Wrote regression test harness for prompt template changes before deployment — baseline comparison using semantic similarity
 - 2026-04-30: Designed cost monitoring dashboard for multi-model inference pipeline — tracked per-request cost by model and endpoint
+- 2026-05-01: Tested hypothetical document embedding (HyDE) approach for improving zero-shot retrieval on domain-specific queries
