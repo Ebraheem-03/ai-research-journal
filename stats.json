@@ -1,6 +1,6 @@
 {
   "days_active": 73,
-  "weeks_active": 12,
+  "weeks_active": 13,
   "months_active": 4,
   "topics_covered": [
     "llm-architecture",
@@ -14,9 +14,10 @@
     "LLM Architecture & Scaling",
     "RAG Systems",
     "Agentic AI",
-    "LLMOps & Evaluation"
+    "LLMOps & Evaluation",
+    "AI Safety & Alignment"
   ],
   "last_updated": "2026-05-03",
-  "last_weekly_topic": "LLMOps & Evaluation",
-  "current_week_index": 4
+  "last_weekly_topic": "AI Safety & Alignment",
+  "current_week_index": 5
 }
