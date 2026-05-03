@@ -77,3 +77,4 @@
 - 2026-04-30: Designed cost monitoring dashboard for multi-model inference pipeline — tracked per-request cost by model and endpoint
 - 2026-05-01: Tested hypothetical document embedding (HyDE) approach for improving zero-shot retrieval on domain-specific queries
 - 2026-05-02: Analyzed KV-cache compression techniques for long-context inference — compared PagedAttention vs StreamingLLM approaches
+- 2026-05-03: Reviewed EU AI Act compliance requirements for high-risk AI systems — mapped to technical implementation controls
