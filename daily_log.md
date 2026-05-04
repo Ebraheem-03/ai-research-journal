@@ -78,3 +78,4 @@
 - 2026-05-01: Tested hypothetical document embedding (HyDE) approach for improving zero-shot retrieval on domain-specific queries
 - 2026-05-02: Analyzed KV-cache compression techniques for long-context inference — compared PagedAttention vs StreamingLLM approaches
 - 2026-05-03: Reviewed EU AI Act compliance requirements for high-risk AI systems — mapped to technical implementation controls
+- 2026-05-04: Reviewed DeepSeek-R2 architecture vs Qwen3-72B inference efficiency tradeoffs — focused on MoE routing strategies and their impact on per-token latency
