@@ -80,3 +80,4 @@
 - 2026-05-03: Reviewed EU AI Act compliance requirements for high-risk AI systems — mapped to technical implementation controls
 - 2026-05-04: Reviewed DeepSeek-R2 architecture vs Qwen3-72B inference efficiency tradeoffs — focused on MoE routing strategies and their impact on per-token latency
 - 2026-05-05: Set up structured logging and distributed tracing for a multi-service RAG pipeline using OpenTelemetry
+- 2026-05-06: Studied ring attention mechanism for distributed long-context inference across multiple GPUs
