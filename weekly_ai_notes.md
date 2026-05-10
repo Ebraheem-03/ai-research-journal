@@ -311,3 +311,27 @@ The article discusses recent advancements in AI safety and alignment, highlighti
 `ai-safety` `rlhf` `constitutional-ai`
 
 ---
+
+---
+
+## Week of 2026-05-10
+
+### 📄 Source
+- **Title:** [PDF] LLM QLoRA Fine-Tuning of Llama, DeepSeek, and Qwen
+- **Author(s) / Lab:** Identified via Tavily search
+- **Type:** Research article / Engineering blog
+- **URL:** http://silverio.net.br/heitor/publicacoes/2026/ieeeaccess2026a.pdf
+- **Published:** 2026-05-10
+
+### 📝 Summary
+The study investigates the fine-tuning of Llama, DeepSeek, and Qwen models using QLoRA, a quantization-aware fine-tuning method. The experiments employ a consistent 4-bit QLoRA fine-tuning process for all models, which are loaded in full-precision and quantized on-the-fly. The target modules for adaptation include all major linear layers within the Transformer architecture, such as query, key, value, and output projections, as well as linear layers of the feed-forward networks. The LoRA alpha (α) is set to double the rank (r) for all fine-tuning runs. This configuration allows for significant weight to be given to the LoRA updates without requiring an excessively high rank. The study aims to evaluate the performance scaling of these models on consumer-grade hardware.
+
+### 🔍 Key Engineering Insights
+1. When using QLoRA fine-tuning, setting the LoRA alpha (α) to double the rank (r) can provide a good balance between update significance and rank requirements.
+2. Targeting a comprehensive set of layers, including both self-attention mechanism and feed-forward networks, can ensure a more holistic fine-tuning process.
+3. Using a library like 'bitsand-bytes' to quantize models on-the-fly can simplify the fine-tuning process and ensure a standardized comparison of models.
+
+### 🏷️ Tags
+`QLoRA` `TransformerArchitecture` `ModelFineTuning`
+
+---
