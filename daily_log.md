@@ -84,3 +84,4 @@
 - 2026-05-07: Implemented canary deployment pattern for LLM model updates with automatic rollback on quality regression
 - 2026-05-08: Benchmarked GGUF vs AWQ quantization for edge deployment of Mistral-7B on consumer hardware
 - 2026-05-09: Studied Constitutional AI approach vs RLHF for instruction following — compared training stability and alignment tax
+- 2026-05-10: Evaluated BGE-M3 multilingual embeddings vs OpenAI text-embedding-3-large for cross-lingual retrieval accuracy
