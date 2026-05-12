@@ -86,3 +86,4 @@
 - 2026-05-09: Studied Constitutional AI approach vs RLHF for instruction following — compared training stability and alignment tax
 - 2026-05-10: Evaluated BGE-M3 multilingual embeddings vs OpenAI text-embedding-3-large for cross-lingual retrieval accuracy
 - 2026-05-11: Reviewed hallucination detection techniques: SelfCheckGPT vs NLI-based approaches — benchmarked on TruthfulQA dataset
+- 2026-05-12: Compared HNSW vs IVF-PQ index strategies for billion-scale vector search with latency constraints
