@@ -88,3 +88,4 @@
 - 2026-05-11: Reviewed hallucination detection techniques: SelfCheckGPT vs NLI-based approaches — benchmarked on TruthfulQA dataset
 - 2026-05-12: Compared HNSW vs IVF-PQ index strategies for billion-scale vector search with latency constraints
 - 2026-05-13: Studied contextual retrieval with document-level context prepending — measured impact on chunk relevance scores
+- 2026-05-14: Evaluated adversarial robustness of instruction-tuned models using automated jailbreak detection benchmarks
