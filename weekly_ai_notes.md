@@ -335,3 +335,27 @@ The study investigates the fine-tuning of Llama, DeepSeek, and Qwen models using
 `QLoRA` `TransformerArchitecture` `ModelFineTuning`
 
 ---
+
+---
+
+## Week of 2026-05-17
+
+### 📄 Source
+- **Title:** The Complete Guide to LLM Inference Optimization: vLLM ...
+- **Author(s) / Lab:** Identified via Tavily search
+- **Type:** Research article / Engineering blog
+- **URL:** https://www.youngju.dev/blog/llm/2026-03-14-llm-inference-optimization-vllm-tensorrt-speculative-decoding.en
+- **Published:** 2026-05-17
+
+### 📝 Summary
+The article discusses recent advancements in LLM inference optimization, focusing on techniques such as Speculative Decoding, vLLM's PagedAttention, and TensorRT-LLM. These methods aim to reduce memory waste and improve performance on NVIDIA GPUs. Speculative Decoding has shown 2-3x speedups without compromising output quality. The article provides a comparative analysis of these technologies through code examples and benchmarks. It also covers operational best practices and troubleshooting scenarios for production environments. The discussion highlights the importance of optimizing LLM inference for efficient deployment.
+
+### 🔍 Key Engineering Insights
+1. Implementing Speculative Decoding can significantly improve LLM inference speed, but it requires careful consideration of acceptance rates to avoid compromising output quality.
+2. Utilizing vLLM's PagedAttention can reduce KV cache memory waste, making it a viable option for optimizing LLM inference on GPUs with limited memory.
+3. TensorRT-LLM with FP8/NVFP4 quantization can achieve peak performance on NVIDIA GPUs, but developers should ensure their architecture is stabilized and compatible with PyTorch.
+
+### 🏷️ Tags
+`LLM-Inference-Optimization` `Speculative-Decoding` `GPU-Acceleration`
+
+---

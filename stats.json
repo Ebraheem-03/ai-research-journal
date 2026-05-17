@@ -1,6 +1,6 @@
 {
   "days_active": 87,
-  "weeks_active": 14,
+  "weeks_active": 15,
   "months_active": 4,
   "topics_covered": [
     "llm-architecture",
@@ -16,9 +16,10 @@
     "Agentic AI",
     "LLMOps & Evaluation",
     "AI Safety & Alignment",
-    "Open Source Models"
+    "Open Source Models",
+    "Inference Optimization"
   ],
   "last_updated": "2026-05-17",
-  "last_weekly_topic": "Open Source Models",
-  "current_week_index": 6
+  "last_weekly_topic": "Inference Optimization",
+  "current_week_index": 7
 }
