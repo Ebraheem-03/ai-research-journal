@@ -92,3 +92,4 @@
 - 2026-05-15: Built automated data flywheel pipeline: production logs → annotation → fine-tuning dataset → model update
 - 2026-05-16: Studied A2A (Agent-to-Agent) protocol vs MCP (Model Context Protocol) differences — mapped capability overlap
 - 2026-05-17: Compared vLLM vs TGI throughput benchmarks on A100 for production serving — measured p50/p95 latency across varying batch sizes
+- 2026-05-18: Studied red-teaming methodologies for LLM safety evaluation — reviewed OWASP Top 10 for LLM Applications

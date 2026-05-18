@@ -1,5 +1,5 @@
 {
-  "days_active": 87,
+  "days_active": 88,
   "weeks_active": 15,
   "months_active": 4,
   "topics_covered": [
@@ -19,7 +19,7 @@
     "Open Source Models",
     "Inference Optimization"
   ],
-  "last_updated": "2026-05-17",
+  "last_updated": "2026-05-18",
   "last_weekly_topic": "Inference Optimization",
   "current_week_index": 7
 }
