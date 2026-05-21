@@ -95,3 +95,4 @@
 - 2026-05-18: Studied red-teaming methodologies for LLM safety evaluation — reviewed OWASP Top 10 for LLM Applications
 - 2026-05-19: Designed cost monitoring dashboard for multi-model inference pipeline — tracked per-request cost by model and endpoint
 - 2026-05-20: Reviewed NIST AI RMF 1.0 controls for agentic AI deployment — mapped GOVERN and MAP functions to production checklist
+- 2026-05-21: Investigated continuous batching optimizations in vLLM for heterogeneous request length distributions
