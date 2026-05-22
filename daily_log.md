@@ -96,3 +96,4 @@
 - 2026-05-19: Designed cost monitoring dashboard for multi-model inference pipeline — tracked per-request cost by model and endpoint
 - 2026-05-20: Reviewed NIST AI RMF 1.0 controls for agentic AI deployment — mapped GOVERN and MAP functions to production checklist
 - 2026-05-21: Investigated continuous batching optimizations in vLLM for heterogeneous request length distributions
+- 2026-05-22: Implemented human-in-the-loop approval checkpoint in CrewAI workflow — tested with financial analysis agent pipeline
