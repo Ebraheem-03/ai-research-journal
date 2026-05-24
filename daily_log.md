@@ -98,3 +98,4 @@
 - 2026-05-21: Investigated continuous batching optimizations in vLLM for heterogeneous request length distributions
 - 2026-05-22: Implemented human-in-the-loop approval checkpoint in CrewAI workflow — tested with financial analysis agent pipeline
 - 2026-05-23: Debugged token budget exhaustion in nested AutoGen agent conversation — implemented token counting middleware
+- 2026-05-24: Evaluated LLM-as-a-Judge consistency using inter-rater reliability metrics — compared GPT-4o vs Claude 3.5 as evaluators
