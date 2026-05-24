@@ -359,3 +359,27 @@ The article discusses recent advancements in LLM inference optimization, focusin
 `LLM-Inference-Optimization` `Speculative-Decoding` `GPU-Acceleration`
 
 ---
+
+---
+
+## Week of 2026-05-24
+
+### 📄 Source
+- **Title:** Best Vector Databases in 2026: A Complete Comparison Guide
+- **Author(s) / Lab:** Identified via Tavily search
+- **Type:** Research article / Engineering blog
+- **URL:** https://www.firecrawl.dev/blog/best-vector-databases
+- **Published:** 2026-05-24
+
+### 📝 Summary
+The article compares various vector databases, including ChromaDB, Qdrant, Pinecone, and Weaviate, in terms of their performance, features, and use cases. ChromaDB is noted for its ease of use and fast development cycle, while Weaviate excels in hybrid search, combining vector similarity, keyword matching, and metadata filtering. The article also discusses extensions like `pgvector` that add vector indexes to existing storage engines, allowing for querying vectors and relational data in the same transaction. Recent benchmarks show that these extensions can compete with specialized systems at moderate scale. The choice of vector database depends on the specific requirements of the project, including performance, scalability, and feature needs. For example, ChromaDB may be suitable for prototypes with under 10 million vectors, while Weaviate may be preferred for applications requiring hybrid search.
+
+### 🔍 Key Engineering Insights
+1. When building prototypes with under 10 million vectors, consider using ChromaDB for its ease of use and fast development cycle, as the performance difference with specialized databases may not be significant.
+2. For applications requiring hybrid search, Weaviate may be a good choice, as it natively supports combining vector similarity, keyword matching, and metadata filtering in a single query.
+3. When deciding between a purpose-built vector database and an extension like `pgvector`, consider the scale of the project and the trade-offs between performance, latency, and infrastructure management, as recent benchmarks show that extensions can compete with specialized systems at moderate scale.
+
+### 🏷️ Tags
+`vector-databases` `hybrid-search` `database-benchmarking`
+
+---
