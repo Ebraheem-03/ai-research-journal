@@ -99,3 +99,4 @@
 - 2026-05-22: Implemented human-in-the-loop approval checkpoint in CrewAI workflow — tested with financial analysis agent pipeline
 - 2026-05-23: Debugged token budget exhaustion in nested AutoGen agent conversation — implemented token counting middleware
 - 2026-05-24: Evaluated LLM-as-a-Judge consistency using inter-rater reliability metrics — compared GPT-4o vs Claude 3.5 as evaluators
+- 2026-05-25: Built tool-use evaluation harness for agentic systems — measured tool selection accuracy across 200 test scenarios
