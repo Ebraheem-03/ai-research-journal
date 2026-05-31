@@ -103,3 +103,4 @@
 - 2026-05-28: Evaluated prompt injection defense strategies — tested system prompt isolation and input sanitization patterns
 - 2026-05-29: Implemented content classification guardrails with multi-label toxicity detection for user-facing chatbot
 - 2026-05-30: Studied speculative decoding and its effect on TTFT (time-to-first-token) — evaluated draft model selection strategies for Llama 4 variants
+- 2026-05-31: Designed LangGraph state machine for a multi-turn document Q&A agent — modeled state transitions for retrieval and generation nodes
