@@ -383,3 +383,27 @@ The article compares various vector databases, including ChromaDB, Qdrant, Pinec
 `vector-databases` `hybrid-search` `database-benchmarking`
 
 ---
+
+---
+
+## Week of 2026-05-31
+
+### 📄 Source
+- **Title:** Towards Greater Leverage: Scaling Laws for Efficient Mixture-of-Experts Language Models
+- **Author(s) / Lab:** Identified via Tavily search
+- **Type:** Research article / Engineering blog
+- **URL:** https://arxiv.org/html/2507.17702v1
+- **Published:** 2026-05-31
+
+### 📝 Summary
+The article "Towards Greater Leverage: Scaling Laws for Efficient Mixture-of-Experts Language Models" presents a study on scaling laws for Mixture-of-Experts (MoE) language models, focusing on efficient architectures. The authors define a new measure of granularity, differing from previous definitions, which allows for a standardized benchmark for architectural comparison. This definition enables the calculation of an Efficiency Leverage (EL) value, indicating the computational cost savings of an MoE model compared to a dense baseline. An EL value of 2, for example, signifies that the MoE model requires half the computational cost to achieve the same performance as the dense baseline. The study highlights the complex interplay of factors governing MoE performance, making it challenging to determine the equivalent capacity of a given MoE architecture. The authors' work provides a foundation for further research on optimizing MoE models.
+
+### 🔍 Key Engineering Insights
+1. When designing MoE architectures, consider the trade-off between expert granularity and computational cost, as a higher Efficiency Leverage (EL) value can enable larger effective parameter scaling or more comprehensive training.
+2. The choice of granularity definition can significantly impact the observed phenomena in MoE models, and using a standardized benchmark can facilitate more accurate comparisons between architectures.
+3. To optimize MoE models, developers should focus on balancing multiple interdependent factors, including sparsity, expert granularity, and computational cost, rather than relying on intuitive determinations of equivalent capacity.
+
+### 🏷️ Tags
+`mixture-of-experts` `language-models` `efficient-architectures`
+
+---

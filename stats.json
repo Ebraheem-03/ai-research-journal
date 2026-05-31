@@ -1,6 +1,6 @@
 {
   "days_active": 99,
-  "weeks_active": 16,
+  "weeks_active": 17,
   "months_active": 4,
   "topics_covered": [
     "llm-architecture",
@@ -18,9 +18,10 @@
     "AI Safety & Alignment",
     "Open Source Models",
     "Inference Optimization",
-    "Vector Databases & Embeddings"
+    "Vector Databases & Embeddings",
+    "LLM Architecture & Scaling"
   ],
   "last_updated": "2026-05-31",
-  "last_weekly_topic": "Vector Databases & Embeddings",
-  "current_week_index": 0
+  "last_weekly_topic": "LLM Architecture & Scaling",
+  "current_week_index": 1
 }
