@@ -1,5 +1,5 @@
 {
-  "days_active": 99,
+  "days_active": 100,
   "weeks_active": 17,
   "months_active": 4,
   "topics_covered": [
@@ -21,7 +21,7 @@
     "Vector Databases & Embeddings",
     "LLM Architecture & Scaling"
   ],
-  "last_updated": "2026-05-31",
+  "last_updated": "2026-06-01",
   "last_weekly_topic": "LLM Architecture & Scaling",
   "current_week_index": 1
 }
