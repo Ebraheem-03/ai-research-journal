@@ -106,3 +106,4 @@
 - 2026-05-31: Designed LangGraph state machine for a multi-turn document Q&A agent — modeled state transitions for retrieval and generation nodes
 - 2026-06-01: Set up structured logging and distributed tracing for a multi-service RAG pipeline using OpenTelemetry
 - 2026-06-02: Implemented query decomposition pipeline for complex multi-hop RAG questions with intermediate retrieval steps
+- 2026-06-03: Designed cost monitoring dashboard for multi-model inference pipeline — tracked per-request cost by model and endpoint
