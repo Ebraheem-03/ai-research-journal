@@ -107,3 +107,4 @@
 - 2026-06-01: Set up structured logging and distributed tracing for a multi-service RAG pipeline using OpenTelemetry
 - 2026-06-02: Implemented query decomposition pipeline for complex multi-hop RAG questions with intermediate retrieval steps
 - 2026-06-03: Designed cost monitoring dashboard for multi-model inference pipeline — tracked per-request cost by model and endpoint
+- 2026-06-04: Evaluated prefix caching strategies for multi-turn chatbot deployments — measured cache hit rates under production traffic patterns
