@@ -109,3 +109,4 @@
 - 2026-06-03: Designed cost monitoring dashboard for multi-model inference pipeline — tracked per-request cost by model and endpoint
 - 2026-06-04: Evaluated prefix caching strategies for multi-turn chatbot deployments — measured cache hit rates under production traffic patterns
 - 2026-06-05: Implemented content classification guardrails with multi-label toxicity detection for user-facing chatbot
+- 2026-06-06: Reviewed NIST AI RMF 1.0 controls for agentic AI deployment — mapped GOVERN and MAP functions to production checklist
