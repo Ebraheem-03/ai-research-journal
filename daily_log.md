@@ -110,3 +110,4 @@
 - 2026-06-04: Evaluated prefix caching strategies for multi-turn chatbot deployments — measured cache hit rates under production traffic patterns
 - 2026-06-05: Implemented content classification guardrails with multi-label toxicity detection for user-facing chatbot
 - 2026-06-06: Reviewed NIST AI RMF 1.0 controls for agentic AI deployment — mapped GOVERN and MAP functions to production checklist
+- 2026-06-07: Benchmarked Pinecone serverless vs Milvus for 10M vector workload — compared query latency and recall@10 metrics
