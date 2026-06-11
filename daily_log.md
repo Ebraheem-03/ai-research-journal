@@ -114,3 +114,4 @@
 - 2026-06-08: Designed LangGraph state machine for a multi-turn document Q&A agent — modeled state transitions for retrieval and generation nodes
 - 2026-06-09: Studied A2A (Agent-to-Agent) protocol vs MCP (Model Context Protocol) differences — mapped capability overlap
 - 2026-06-10: Wrote regression test harness for prompt template changes before deployment — baseline comparison using semantic similarity
+- 2026-06-11: Evaluated prompt injection defense strategies — tested system prompt isolation and input sanitization patterns
