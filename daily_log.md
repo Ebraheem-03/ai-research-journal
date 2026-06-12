@@ -115,3 +115,4 @@
 - 2026-06-09: Studied A2A (Agent-to-Agent) protocol vs MCP (Model Context Protocol) differences — mapped capability overlap
 - 2026-06-10: Wrote regression test harness for prompt template changes before deployment — baseline comparison using semantic similarity
 - 2026-06-11: Evaluated prompt injection defense strategies — tested system prompt isolation and input sanitization patterns
+- 2026-06-12: Studied red-teaming methodologies for LLM safety evaluation — reviewed OWASP Top 10 for LLM Applications
