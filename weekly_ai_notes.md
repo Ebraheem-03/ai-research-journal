@@ -431,3 +431,27 @@ The article discusses various chunking methods for retrieval-augmented generatio
 `document_chunking` `retrieval_augmented_generation` `natural_language_processing`
 
 ---
+
+---
+
+## Week of 2026-06-14
+
+### 📄 Source
+- **Title:** AI Agents 2026 — Guide from LLM to Multi-Agent Systems - EITT
+- **Author(s) / Lab:** Identified via Tavily search
+- **Type:** Research article / Engineering blog
+- **URL:** https://eitt.academy/knowledge-base/ai-agents-2026-guide-from-llm-to-multi-agent-systems
+- **Published:** 2026-06-14
+
+### 📝 Summary
+The article discusses the architecture of AI agents in 2026, focusing on the reasoning engine layer, which manages the agent loop and handles state transitions, errors, and progress persistence. LangGraph, CrewAI, and AutoGen are identified as leading frameworks in this layer, with LangGraph being the most popular production-grade option. The choice of framework affects stability, auditability, and self-hosting possibilities. LangGraph's philosophy is based on a graph of states and transitions, with state persistence in a database and retry logic out-of-the-box. The ecosystem around LangGraph includes LangChain, LangSmith, and LangGraph Cloud, with support for Python and TypeScript. The classical production agent architecture consists of five layers: LLM, reasoning engine, tools/function calling, memory, and observability.
+
+### 🔍 Key Engineering Insights
+1. When designing an AI agent, it's essential to consider the trade-offs between different reasoning engine frameworks, such as LangGraph, CrewAI, and AutoGen, in terms of stability, auditability, and self-hosting possibilities.
+2. To ensure scalability, all five layers of the classical production agent architecture must be implemented, including LLM, reasoning engine, tools/function calling, memory, and observability.
+3. LangGraph's graph-based state machine approach requires a steep learning curve initially, but maintenance becomes relatively flat, making it a viable option for production-grade deployments.
+
+### 🏷️ Tags
+`ai-agents` `reasoning-engine` `langgraph`
+
+---
