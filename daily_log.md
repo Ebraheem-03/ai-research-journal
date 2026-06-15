@@ -118,3 +118,4 @@
 - 2026-06-12: Studied red-teaming methodologies for LLM safety evaluation — reviewed OWASP Top 10 for LLM Applications
 - 2026-06-13: Studied Constitutional AI approach vs RLHF for instruction following — compared training stability and alignment tax
 - 2026-06-14: Reviewed hallucination detection techniques: SelfCheckGPT vs NLI-based approaches — benchmarked on TruthfulQA dataset
+- 2026-06-15: Implemented hybrid BM25 + dense retrieval with Reciprocal Rank Fusion (RRF) scoring — tested on a 50K document corpus
