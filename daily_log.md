@@ -120,3 +120,4 @@
 - 2026-06-14: Reviewed hallucination detection techniques: SelfCheckGPT vs NLI-based approaches — benchmarked on TruthfulQA dataset
 - 2026-06-15: Implemented hybrid BM25 + dense retrieval with Reciprocal Rank Fusion (RRF) scoring — tested on a 50K document corpus
 - 2026-06-16: Studied ring attention mechanism for distributed long-context inference across multiple GPUs
+- 2026-06-17: Implemented human-in-the-loop approval checkpoint in CrewAI workflow — tested with financial analysis agent pipeline
