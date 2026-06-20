@@ -123,3 +123,4 @@
 - 2026-06-17: Implemented human-in-the-loop approval checkpoint in CrewAI workflow — tested with financial analysis agent pipeline
 - 2026-06-18: Set up RAGAS evaluation pipeline for faithfulness and context recall metrics — integrated with CI/CD for nightly runs
 - 2026-06-19: Analyzed KV-cache compression techniques for long-context inference — compared PagedAttention vs StreamingLLM approaches
+- 2026-06-20: Debugged token budget exhaustion in nested AutoGen agent conversation — implemented token counting middleware
