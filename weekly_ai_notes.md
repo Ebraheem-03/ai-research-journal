@@ -455,3 +455,27 @@ The article discusses the architecture of AI agents in 2026, focusing on the rea
 `ai-agents` `reasoning-engine` `langgraph`
 
 ---
+
+---
+
+## Week of 2026-06-21
+
+### 📄 Source
+- **Title:** LLM Hallucination Detection in Production | LayerLens
+- **Author(s) / Lab:** Identified via Tavily search
+- **Type:** Research article / Engineering blog
+- **URL:** https://layerlens.ai/blog/llm-hallucination-detection-in-production
+- **Published:** 2026-06-21
+
+### 📝 Summary
+LLM hallucination detection in production environments involves identifying and mitigating instances where large language models (LLMs) generate inaccurate or fabricated information. This process is probabilistic and requires a multi-faceted approach to address various types of hallucinations, including fabrication, citation drift, and misattribution. Effective detection methods combine evaluation datasets, runtime signals, and mitigation workflows to bound risk within operational thresholds. Faithfulness scoring and entailment models can reduce the risk of hallucinations, but introduce calibration tradeoffs that must be carefully managed. Retrieval systems and agentic workflows can expand the surfaces where hallucinations can occur, making comprehensive detection strategies essential. By implementing a three-layer defense comprising prompt-level, retrieval-layer, and runtime measures, developers can better detect and mitigate LLM hallucinations.
+
+### 🔍 Key Engineering Insights
+1. To improve hallucination detection, developers can utilize a combination of evaluation datasets, runtime signals, and mitigation workflows, such as faithfulness scoring, entailment models, and confidence thresholding.
+2. Implementing a three-layer defense strategy, including prompt-level measures (e.g., abstention instructions, citation requirements), retrieval-layer measures (e.g., high-quality embeddings, deduplicated stores), and runtime measures (e.g., confidence thresholding, secondary entailment checks), can help bound risk and mitigate hallucinations.
+3. Developers can leverage various tools and techniques, such as LayerLens benchmark evaluation, FactScore, and entailment-based scoring models, to detect and evaluate LLM hallucinations in production environments.
+
+### 🏷️ Tags
+`llm_hallucination_detection` `faithfulness_scoring` `entailment_models`
+
+---
