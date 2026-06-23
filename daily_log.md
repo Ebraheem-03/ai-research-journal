@@ -126,3 +126,4 @@
 - 2026-06-20: Debugged token budget exhaustion in nested AutoGen agent conversation — implemented token counting middleware
 - 2026-06-21: Built automated data flywheel pipeline: production logs → annotation → fine-tuning dataset → model update
 - 2026-06-22: Implemented output filtering guardrails using Guardrails-AI library — configured validators for PII and toxicity detection
+- 2026-06-23: Built tool-use evaluation harness for agentic systems — measured tool selection accuracy across 200 test scenarios
