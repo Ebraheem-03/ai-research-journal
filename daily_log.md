@@ -127,3 +127,4 @@
 - 2026-06-21: Built automated data flywheel pipeline: production logs → annotation → fine-tuning dataset → model update
 - 2026-06-22: Implemented output filtering guardrails using Guardrails-AI library — configured validators for PII and toxicity detection
 - 2026-06-23: Built tool-use evaluation harness for agentic systems — measured tool selection accuracy across 200 test scenarios
+- 2026-06-24: Tested ColBERT v2 re-ranking against cross-encoder baselines — measured MRR improvement on MS MARCO passage ranking
