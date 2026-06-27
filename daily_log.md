@@ -130,3 +130,4 @@
 - 2026-06-24: Tested ColBERT v2 re-ranking against cross-encoder baselines — measured MRR improvement on MS MARCO passage ranking
 - 2026-06-25: Implemented canary deployment pattern for LLM model updates with automatic rollback on quality regression
 - 2026-06-26: Evaluated BGE-M3 multilingual embeddings vs OpenAI text-embedding-3-large for cross-lingual retrieval accuracy
+- 2026-06-27: Evaluated late chunking vs semantic chunking strategies for long-document RAG — tested with legal contract corpus
