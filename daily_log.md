@@ -131,3 +131,4 @@
 - 2026-06-25: Implemented canary deployment pattern for LLM model updates with automatic rollback on quality regression
 - 2026-06-26: Evaluated BGE-M3 multilingual embeddings vs OpenAI text-embedding-3-large for cross-lingual retrieval accuracy
 - 2026-06-27: Evaluated late chunking vs semantic chunking strategies for long-document RAG — tested with legal contract corpus
+- 2026-06-28: Implemented parent-child document retrieval strategy with metadata filtering for multi-tenant RAG system
