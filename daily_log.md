@@ -132,3 +132,4 @@
 - 2026-06-26: Evaluated BGE-M3 multilingual embeddings vs OpenAI text-embedding-3-large for cross-lingual retrieval accuracy
 - 2026-06-27: Evaluated late chunking vs semantic chunking strategies for long-document RAG — tested with legal contract corpus
 - 2026-06-28: Implemented parent-child document retrieval strategy with metadata filtering for multi-tenant RAG system
+- 2026-06-29: Designed retry and fallback patterns for unreliable tool calls in production agent deployments
