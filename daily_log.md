@@ -133,3 +133,4 @@
 - 2026-06-27: Evaluated late chunking vs semantic chunking strategies for long-document RAG — tested with legal contract corpus
 - 2026-06-28: Implemented parent-child document retrieval strategy with metadata filtering for multi-tenant RAG system
 - 2026-06-29: Designed retry and fallback patterns for unreliable tool calls in production agent deployments
+- 2026-06-30: Read Anthropic's responsible scaling policy and compared to DeepMind's approach — documented key policy divergences
