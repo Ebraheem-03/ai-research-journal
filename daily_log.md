@@ -134,3 +134,4 @@
 - 2026-06-28: Implemented parent-child document retrieval strategy with metadata filtering for multi-tenant RAG system
 - 2026-06-29: Designed retry and fallback patterns for unreliable tool calls in production agent deployments
 - 2026-06-30: Read Anthropic's responsible scaling policy and compared to DeepMind's approach — documented key policy divergences
+- 2026-07-01: Tested hypothetical document embedding (HyDE) approach for improving zero-shot retrieval on domain-specific queries
