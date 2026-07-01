@@ -104,3 +104,24 @@ N/A
 [Towards Greater Leverage: Scaling Laws for Efficient Mixture-of-Experts Language Models](https://arxiv.org/html/2507.17702v1)
 
 ---
+
+---
+
+## Month of 2026-06
+
+### 📊 Activity Summary
+- Days logged: 30
+- Weekly notes added: 4
+- Topics covered: llm-architecture, rag, Agentic AI, LLMOps & Evaluation, AI Safety & Alignment, Open Source Models, Inference Optimization, Vector Databases & Embeddings, LLM Architecture & Scaling, RAG Systems, Agentic AI, LLMOps & Evaluation, AI Safety & Alignment, Open Source Models, Inference Optimization, Vector Databases & Embeddings, LLM Architecture & Scaling, RAG Systems, Agentic AI, LLMOps & Evaluation, AI Safety & Alignment
+
+### 🧠 Key Themes This Month
+- Explored topics related to: document_chunking
+- Explored topics related to: retrieval_augmented_generation
+- Explored topics related to: natural_language_processing
+- Explored topics related to: ai-agents
+- Explored topics related to: reasoning-engine
+
+### 🔗 Most Valuable Source This Month
+[Responsible AI: Building Trust Through Alignment and Guardrails | GigaSpaces AI](https://www.gigaspaces.com/blog/responsible-ai)
+
+---
