@@ -136,3 +136,4 @@
 - 2026-06-30: Read Anthropic's responsible scaling policy and compared to DeepMind's approach — documented key policy divergences
 - 2026-07-01: Tested hypothetical document embedding (HyDE) approach for improving zero-shot retrieval on domain-specific queries
 - 2026-07-02: Analyzed KV-cache compression techniques for long-context inference — compared PagedAttention vs StreamingLLM approaches
+- 2026-07-03: Designed LangGraph state machine for a multi-turn document Q&A agent — modeled state transitions for retrieval and generation nodes
