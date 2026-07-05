@@ -503,3 +503,27 @@ The article discusses the importance of achieving responsible AI through a two-p
 `responsible_ai` `large_language_models` `reinforcement_learning`
 
 ---
+
+---
+
+## Week of 2026-07-05
+
+### 📄 Source
+- **Title:** DeepSeek V3.2 vs Llama 4 vs Qwen 3 (2026): Cost-per-Token from ...
+- **Author(s) / Lab:** Identified via Tavily search
+- **Type:** Research article / Engineering blog
+- **URL:** https://www.spheron.network/blog/deepseek-vs-llama-4-vs-qwen3
+- **Published:** 2026-07-05
+
+### 📝 Summary
+The article compares DeepSeek V3.2, Llama 4, and Qwen 3 in terms of cost-per-token, fine-tuning ecosystem, and deployment on Spheron. DeepSeek V3.2 requires a multi-node setup and careful memory management for fine-tuning due to its large model size (685B parameters). Llama 4 has strong ecosystem support, with `unsloth` and `torchtune` covering its Scout and Maverick variants. Qwen 3 has an Apache 2.0 license, allowing for unrestricted fine-tuning, and `unsloth` supports its 8B and 32B variants with LoRA out of the box. The article also provides a setup guide for deploying Qwen3-32B on Spheron using a bare-metal GPU instance. The cost of running these models is significant, with an 8x H100 setup costing around $20.00/hr.
+
+### 🔍 Key Engineering Insights
+1. For fine-tuning large models like DeepSeek V3.2, a multi-node setup and careful memory management are necessary, making LoRA a more practical approach for most teams.
+2. When choosing a fine-tuning framework for Llama 4, `unsloth` is suitable for Scout, while `torchtune` is better for Maverick due to its multi-GPU requirements.
+3. Qwen 3's Apache 2.0 license and support for LoRA and standard PEFT/LoRA make it a viable alternative for teams prioritizing licensing flexibility and ease of fine-tuning.
+
+### 🏷️ Tags
+`large_language_models` `fine_tuning` `gpu_deployment`
+
+---
