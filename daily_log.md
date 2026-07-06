@@ -139,3 +139,4 @@
 - 2026-07-03: Designed LangGraph state machine for a multi-turn document Q&A agent — modeled state transitions for retrieval and generation nodes
 - 2026-07-04: Designed retry and fallback patterns for unreliable tool calls in production agent deployments
 - 2026-07-05: Debugged token budget exhaustion in nested AutoGen agent conversation — implemented token counting middleware
+- 2026-07-06: Evaluated late chunking vs semantic chunking strategies for long-document RAG — tested with legal contract corpus
