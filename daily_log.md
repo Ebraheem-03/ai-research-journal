@@ -140,3 +140,4 @@
 - 2026-07-04: Designed retry and fallback patterns for unreliable tool calls in production agent deployments
 - 2026-07-05: Debugged token budget exhaustion in nested AutoGen agent conversation — implemented token counting middleware
 - 2026-07-06: Evaluated late chunking vs semantic chunking strategies for long-document RAG — tested with legal contract corpus
+- 2026-07-07: Wrote regression test harness for prompt template changes before deployment — baseline comparison using semantic similarity
