@@ -527,3 +527,27 @@ The article compares DeepSeek V3.2, Llama 4, and Qwen 3 in terms of cost-per-tok
 `large_language_models` `fine_tuning` `gpu_deployment`
 
 ---
+
+---
+
+## Week of 2026-07-12
+
+### 📄 Source
+- **Title:** LLM Inference Optimization and Quantization 2026 | Zylos Research
+- **Author(s) / Lab:** Identified via Tavily search
+- **Type:** Research article / Engineering blog
+- **URL:** https://zylos.ai/research/2026-01-15-llm-inference-optimization
+- **Published:** 2026-07-12
+
+### 📝 Summary
+The article discusses recent advancements in LLM inference optimization and quantization, highlighting key techniques and frameworks that have shown significant performance improvements. Notably, FP8 quantization has been adopted as the default for Hopper GPUs, offering near-lossless results with substantial speed gains. The use of vLLM with PagedAttention and SGLang with RadixAttention has also become a production standard, yielding 2-4x throughput improvements. Additionally, speculative decoding and continuous batching have been identified as essential techniques for optimizing LLM inference. The article also touches on the maturation of edge deployment, with sub-9B models achieving competitive results. Overall, these developments have contributed to a more efficient LLM inference landscape.
+
+### 🔍 Key Engineering Insights
+1. Implementing FP8 quantization for Hopper GPUs can result in significant speed gains without compromising model accuracy, making it a viable option for production environments.
+2. Utilizing continuous batching instead of static batching can lead to substantial performance improvements, with reported gains of up to 23x, and should be considered for optimizing LLM inference workflows.
+3. Integrating speculative decoding techniques, such as PEARL, can deliver 2-3x speedup for latency-sensitive applications, making them a valuable optimization strategy for certain use cases.
+
+### 🏷️ Tags
+`llm_inference` `quantization` `speculative_decoding`
+
+---
