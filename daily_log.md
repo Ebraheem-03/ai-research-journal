@@ -145,3 +145,4 @@
 - 2026-07-09: Profiled memory usage patterns for Llama-4-Scout 109B across different quantization levels (FP16, INT8, INT4)
 - 2026-07-10: Evaluated BGE-M3 multilingual embeddings vs OpenAI text-embedding-3-large for cross-lingual retrieval accuracy
 - 2026-07-11: Studied A2A (Agent-to-Agent) protocol vs MCP (Model Context Protocol) differences — mapped capability overlap
+- 2026-07-12: Set up structured logging and distributed tracing for a multi-service RAG pipeline using OpenTelemetry
