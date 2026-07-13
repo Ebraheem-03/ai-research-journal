@@ -146,3 +146,4 @@
 - 2026-07-10: Evaluated BGE-M3 multilingual embeddings vs OpenAI text-embedding-3-large for cross-lingual retrieval accuracy
 - 2026-07-11: Studied A2A (Agent-to-Agent) protocol vs MCP (Model Context Protocol) differences — mapped capability overlap
 - 2026-07-12: Set up structured logging and distributed tracing for a multi-service RAG pipeline using OpenTelemetry
+- 2026-07-13: Reviewed NIST AI RMF 1.0 controls for agentic AI deployment — mapped GOVERN and MAP functions to production checklist
