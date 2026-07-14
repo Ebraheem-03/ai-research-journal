@@ -147,3 +147,4 @@
 - 2026-07-11: Studied A2A (Agent-to-Agent) protocol vs MCP (Model Context Protocol) differences — mapped capability overlap
 - 2026-07-12: Set up structured logging and distributed tracing for a multi-service RAG pipeline using OpenTelemetry
 - 2026-07-13: Reviewed NIST AI RMF 1.0 controls for agentic AI deployment — mapped GOVERN and MAP functions to production checklist
+- 2026-07-14: Benchmarked Pinecone serverless vs Milvus for 10M vector workload — compared query latency and recall@10 metrics
