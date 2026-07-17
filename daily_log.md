@@ -150,3 +150,4 @@
 - 2026-07-14: Benchmarked Pinecone serverless vs Milvus for 10M vector workload — compared query latency and recall@10 metrics
 - 2026-07-15: Tested ColBERT v2 re-ranking against cross-encoder baselines — measured MRR improvement on MS MARCO passage ranking
 - 2026-07-16: Implemented query decomposition pipeline for complex multi-hop RAG questions with intermediate retrieval steps
+- 2026-07-17: Implemented structured planning module using ReAct framework with self-reflection for complex task decomposition
