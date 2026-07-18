@@ -151,3 +151,4 @@
 - 2026-07-15: Tested ColBERT v2 re-ranking against cross-encoder baselines — measured MRR improvement on MS MARCO passage ranking
 - 2026-07-16: Implemented query decomposition pipeline for complex multi-hop RAG questions with intermediate retrieval steps
 - 2026-07-17: Implemented structured planning module using ReAct framework with self-reflection for complex task decomposition
+- 2026-07-18: Studied Constitutional AI approach vs RLHF for instruction following — compared training stability and alignment tax
