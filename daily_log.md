@@ -152,3 +152,4 @@
 - 2026-07-16: Implemented query decomposition pipeline for complex multi-hop RAG questions with intermediate retrieval steps
 - 2026-07-17: Implemented structured planning module using ReAct framework with self-reflection for complex task decomposition
 - 2026-07-18: Studied Constitutional AI approach vs RLHF for instruction following — compared training stability and alignment tax
+- 2026-07-19: Implemented output filtering guardrails using Guardrails-AI library — configured validators for PII and toxicity detection
