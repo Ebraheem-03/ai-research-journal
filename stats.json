@@ -1,5 +1,5 @@
 {
-  "days_active": 148,
+  "days_active": 149,
   "weeks_active": 24,
   "months_active": 6,
   "topics_covered": [
@@ -28,7 +28,7 @@
     "Inference Optimization",
     "Vector Databases & Embeddings"
   ],
-  "last_updated": "2026-07-19",
+  "last_updated": "2026-07-20",
   "last_weekly_topic": "Vector Databases & Embeddings",
   "current_week_index": 0
 }
