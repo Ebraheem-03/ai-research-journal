@@ -154,3 +154,4 @@
 - 2026-07-18: Studied Constitutional AI approach vs RLHF for instruction following — compared training stability and alignment tax
 - 2026-07-19: Implemented output filtering guardrails using Guardrails-AI library — configured validators for PII and toxicity detection
 - 2026-07-20: Studied memory architectures for long-running agents — compared sliding window vs summarization-based approaches
+- 2026-07-21: Benchmarked GGUF vs AWQ quantization for edge deployment of Mistral-7B on consumer hardware
