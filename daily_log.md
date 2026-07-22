@@ -155,3 +155,4 @@
 - 2026-07-19: Implemented output filtering guardrails using Guardrails-AI library — configured validators for PII and toxicity detection
 - 2026-07-20: Studied memory architectures for long-running agents — compared sliding window vs summarization-based approaches
 - 2026-07-21: Benchmarked GGUF vs AWQ quantization for edge deployment of Mistral-7B on consumer hardware
+- 2026-07-22: Implemented human-in-the-loop approval checkpoint in CrewAI workflow — tested with financial analysis agent pipeline
