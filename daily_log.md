@@ -158,3 +158,4 @@
 - 2026-07-22: Implemented human-in-the-loop approval checkpoint in CrewAI workflow — tested with financial analysis agent pipeline
 - 2026-07-23: Implemented content classification guardrails with multi-label toxicity detection for user-facing chatbot
 - 2026-07-24: Designed cost monitoring dashboard for multi-model inference pipeline — tracked per-request cost by model and endpoint
+- 2026-07-25: Configured LangSmith tracing for production prompt debugging — set up alerting on latency regression and error rate spikes
