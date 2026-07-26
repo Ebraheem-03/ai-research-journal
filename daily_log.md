@@ -159,3 +159,4 @@
 - 2026-07-23: Implemented content classification guardrails with multi-label toxicity detection for user-facing chatbot
 - 2026-07-24: Designed cost monitoring dashboard for multi-model inference pipeline — tracked per-request cost by model and endpoint
 - 2026-07-25: Configured LangSmith tracing for production prompt debugging — set up alerting on latency regression and error rate spikes
+- 2026-07-26: Reviewed hallucination detection techniques: SelfCheckGPT vs NLI-based approaches — benchmarked on TruthfulQA dataset
