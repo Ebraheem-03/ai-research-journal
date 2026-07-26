@@ -575,3 +575,27 @@ The article "Open Source Embedding Models Benchmark for RAG" provides a benchmar
 `embedding-models` `retrieval-augmented-generation` `natural-language-processing`
 
 ---
+
+---
+
+## Week of 2026-07-26
+
+### 📄 Source
+- **Title:** LLM Mixture of Experts Explained — A 2026 Field Guide
+- **Author(s) / Lab:** Identified via Tavily search
+- **Type:** Research article / Engineering blog
+- **URL:** https://tensorops.ai/blog/what-is-mixture-of-experts-llm
+- **Published:** 2026-07-26
+
+### 📝 Summary
+The Mixture of Experts (MoE) architecture has become a dominant approach in building large-scale AI models, allowing for significant increases in model size without proportional increases in computational costs. This is achieved by activating only a subset of model parameters for each input token, rather than the entire model. The MoE approach uses a router to select a subset of experts, typically 2, from a larger pool, and combines their outputs additively. The total number of parameters in these models can be quite large, such as 46.7B, but only a fraction, around 12.9B, are active at any given time. This leads to significant efficiency gains, with some models operating at speeds up to 6 times faster than comparable models without MoE. The identification of "Super Experts" - a small subset of experts that dominate extreme activation outliers - has also been found to be crucial for model performance and stability.
+
+### 🔍 Key Engineering Insights
+1. When implementing MoE, it's essential to carefully evaluate the number of experts and the routing mechanism to ensure optimal performance and efficiency, as the choice of these hyperparameters can significantly impact model behavior.
+2. The identification and handling of "Super Experts" is critical for maintaining model stability and performance, as pruning or modifying these experts can have significant and potentially catastrophic effects on model output.
+3. MoE can be used to build larger and more capable models while keeping inference costs and training compute within reasonable bounds, making it a valuable technique for developers working on large-scale AI projects.
+
+### 🏷️ Tags
+`mixture_of_experts` `efficient_inference` `large_scale_ai`
+
+---
