@@ -162,3 +162,4 @@
 - 2026-07-26: Reviewed hallucination detection techniques: SelfCheckGPT vs NLI-based approaches — benchmarked on TruthfulQA dataset
 - 2026-07-27: Built automated data flywheel pipeline: production logs → annotation → fine-tuning dataset → model update
 - 2026-07-28: Evaluated agent observability patterns using LangSmith traces — identified common failure modes in multi-step workflows
+- 2026-07-29: Studied contextual retrieval with document-level context prepending — measured impact on chunk relevance scores
