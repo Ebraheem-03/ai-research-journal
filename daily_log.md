@@ -163,3 +163,4 @@
 - 2026-07-27: Built automated data flywheel pipeline: production logs → annotation → fine-tuning dataset → model update
 - 2026-07-28: Evaluated agent observability patterns using LangSmith traces — identified common failure modes in multi-step workflows
 - 2026-07-29: Studied contextual retrieval with document-level context prepending — measured impact on chunk relevance scores
+- 2026-07-30: Implemented parent-child document retrieval strategy with metadata filtering for multi-tenant RAG system
