@@ -125,3 +125,24 @@ N/A
 [Responsible AI: Building Trust Through Alignment and Guardrails | GigaSpaces AI](https://www.gigaspaces.com/blog/responsible-ai)
 
 ---
+
+---
+
+## Month of 2026-07
+
+### 📊 Activity Summary
+- Days logged: 31
+- Weekly notes added: 4
+- Topics covered: llm-architecture, rag, Agentic AI, LLMOps & Evaluation, AI Safety & Alignment, Open Source Models, Inference Optimization, Vector Databases & Embeddings, LLM Architecture & Scaling, RAG Systems, Agentic AI, LLMOps & Evaluation, AI Safety & Alignment, Open Source Models, Inference Optimization, Vector Databases & Embeddings, LLM Architecture & Scaling, RAG Systems, Agentic AI, LLMOps & Evaluation, AI Safety & Alignment, Open Source Models, Inference Optimization, Vector Databases & Embeddings, LLM Architecture & Scaling
+
+### 🧠 Key Themes This Month
+- Explored topics related to: large_language_models
+- Explored topics related to: fine_tuning
+- Explored topics related to: gpu_deployment
+- Explored topics related to: llm_inference
+- Explored topics related to: quantization
+
+### 🔗 Most Valuable Source This Month
+[LLM Mixture of Experts Explained — A 2026 Field Guide](https://tensorops.ai/blog/what-is-mixture-of-experts-llm)
+
+---

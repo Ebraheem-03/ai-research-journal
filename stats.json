@@ -1,7 +1,7 @@
 {
   "days_active": 161,
   "weeks_active": 25,
-  "months_active": 6,
+  "months_active": 7,
   "topics_covered": [
     "llm-architecture",
     "rag",
