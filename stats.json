@@ -1,5 +1,5 @@
 {
-  "days_active": 164,
+  "days_active": 165,
   "weeks_active": 26,
   "months_active": 7,
   "topics_covered": [
@@ -30,7 +30,7 @@
     "LLM Architecture & Scaling",
     "RAG Systems"
   ],
-  "last_updated": "2026-08-04",
+  "last_updated": "2026-08-05",
   "last_weekly_topic": "RAG Systems",
   "current_week_index": 2
 }

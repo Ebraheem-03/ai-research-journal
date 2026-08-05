@@ -169,3 +169,4 @@
 - 2026-08-02: Evaluated prefix caching strategies for multi-turn chatbot deployments — measured cache hit rates under production traffic patterns
 - 2026-08-03: Evaluated agent observability patterns using LangSmith traces — identified common failure modes in multi-step workflows
 - 2026-08-04: Implemented prompt versioning system with A/B testing support — tracked performance metrics across prompt iterations
+- 2026-08-05: Implemented parent-child document retrieval strategy with metadata filtering for multi-tenant RAG system
