@@ -171,3 +171,4 @@
 - 2026-08-04: Implemented prompt versioning system with A/B testing support — tracked performance metrics across prompt iterations
 - 2026-08-05: Implemented parent-child document retrieval strategy with metadata filtering for multi-tenant RAG system
 - 2026-08-06: Tested structured outputs with constrained decoding using Outlines library — benchmarked JSON schema adherence rates across model sizes
+- 2026-08-07: Compared HNSW vs IVF-PQ index strategies for billion-scale vector search with latency constraints
