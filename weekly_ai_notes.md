@@ -623,3 +623,27 @@ The article presents a comparative evaluation of advanced chunking techniques fo
 `retrieval-augmented-generation` `large-language-models` `clinical-decision-support`
 
 ---
+
+---
+
+## Week of 2026-08-09
+
+### 📄 Source
+- **Title:** Multi-Agent Orchestration Frameworks 2026
+- **Author(s) / Lab:** Identified via Tavily search
+- **Type:** Research article / Engineering blog
+- **URL:** https://presenc.ai/research/multi-agent-orchestration-frameworks-2026
+- **Published:** 2026-08-09
+
+### 📝 Summary
+The article discusses the current state of multi-agent orchestration frameworks, with LangGraph estimated to be used in approximately 38% of production deployments in Q1 2026. Custom Python/TypeScript orchestration is used in around 28% of deployments, often for unusual production requirements. The choice of framework is considered less important than other factors such as observability, error recovery, and state models. LangGraph's graph-based state machine model and supervisor pattern are notable strengths, but its opinionated state-machine model can have a learning curve. CrewAI's role-based abstraction is intuitive for prototyping, but its observability and error recovery patterns are less production-mature. Microsoft AutoGen and other frameworks also have their own strengths and weaknesses.
+
+### 🔍 Key Engineering Insights
+1. When choosing a multi-agent orchestration framework, consider the trade-offs between the framework's opinionated state-machine model and the need for customizability, as well as the maturity of its observability and error recovery patterns.
+2. For production deployments with specific observability or regulatory constraints, custom Python/TypeScript orchestration may be a better choice than a pre-built framework, despite the additional development time required.
+3. When evaluating a framework like LangGraph or CrewAI, consider the size and maturity of its ecosystem, including the availability of integrations and the quality of its trace tooling, such as LangSmith observability.
+
+### 🏷️ Tags
+`multi-agent-systems` `orchestration-frameworks` `langgraph`
+
+---
