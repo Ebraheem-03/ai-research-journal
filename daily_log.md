@@ -173,3 +173,4 @@
 - 2026-08-06: Tested structured outputs with constrained decoding using Outlines library — benchmarked JSON schema adherence rates across model sizes
 - 2026-08-07: Compared HNSW vs IVF-PQ index strategies for billion-scale vector search with latency constraints
 - 2026-08-08: Studied memory architectures for long-running agents — compared sliding window vs summarization-based approaches
+- 2026-08-09: Implemented output filtering guardrails using Guardrails-AI library — configured validators for PII and toxicity detection
