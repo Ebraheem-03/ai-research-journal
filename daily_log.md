@@ -177,3 +177,4 @@
 - 2026-08-10: Implemented canary deployment pattern for LLM model updates with automatic rollback on quality regression
 - 2026-08-11: Studied Constitutional AI approach vs RLHF for instruction following — compared training stability and alignment tax
 - 2026-08-12: Tested ColBERT v2 re-ranking against cross-encoder baselines — measured MRR improvement on MS MARCO passage ranking
+- 2026-08-13: Set up structured logging and distributed tracing for a multi-service RAG pipeline using OpenTelemetry
