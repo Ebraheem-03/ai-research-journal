@@ -647,3 +647,27 @@ The article discusses the current state of multi-agent orchestration frameworks,
 `multi-agent-systems` `orchestration-frameworks` `langgraph`
 
 ---
+
+---
+
+## Week of 2026-08-16
+
+### 📄 Source
+- **Title:** LLM Hallucination Detection in Production - LayerLens
+- **Author(s) / Lab:** Identified via Tavily search
+- **Type:** Research article / Engineering blog
+- **URL:** https://layerlens.ai/blog/llm-hallucination-detection-in-production
+- **Published:** 2026-08-16
+
+### 📝 Summary
+LLM hallucination detection in production environments involves identifying and mitigating various types of errors, including fabrication, citation drift, speculative completion, and agentic execution errors. These errors require distinct detection logic to effectively reduce hallucination risk. Faithfulness scoring and entailment models can be employed to assess the reliability of generated text, but their use introduces calibration tradeoffs that must be carefully managed. The complexity of hallucination detection is further increased by the presence of retrieval systems and agentic workflows, which expand the potential surfaces for hallucination beyond simple fabrication. Effective detection strategies must therefore be probabilistic and multi-surface, accounting for the diverse range of potential errors. By developing and refining these strategies, developers can improve the accuracy and reliability of LLMs in production settings.
+
+### 🔍 Key Engineering Insights
+1. Implementing distinct detection logic for different types of hallucination errors, such as fabrication and citation drift, can improve the overall effectiveness of hallucination detection systems.
+2. Faithfulness scoring and entailment models can be used to reduce hallucination risk, but require careful calibration to balance false positive and false negative rates.
+3. Integrating retrieval systems and agentic workflows into hallucination detection systems can help identify and mitigate hallucination errors that may arise from these components, such as speculative completion and agentic execution errors.
+
+### 🏷️ Tags
+`llm_hallucination_detection` `faithfulness_scoring` `entailment_models`
+
+---
