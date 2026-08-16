@@ -180,3 +180,4 @@
 - 2026-08-13: Set up structured logging and distributed tracing for a multi-service RAG pipeline using OpenTelemetry
 - 2026-08-14: Profiled memory usage patterns for Llama-4-Scout 109B across different quantization levels (FP16, INT8, INT4)
 - 2026-08-15: Benchmarked Pinecone serverless vs Milvus for 10M vector workload — compared query latency and recall@10 metrics
+- 2026-08-16: Studied watermarking techniques for LLM-generated text — compared statistical and learned watermark approaches
