@@ -182,3 +182,4 @@
 - 2026-08-15: Benchmarked Pinecone serverless vs Milvus for 10M vector workload — compared query latency and recall@10 metrics
 - 2026-08-16: Studied watermarking techniques for LLM-generated text — compared statistical and learned watermark approaches
 - 2026-08-17: Designed cost monitoring dashboard for multi-model inference pipeline — tracked per-request cost by model and endpoint
+- 2026-08-18: Reviewed NIST AI RMF 1.0 controls for agentic AI deployment — mapped GOVERN and MAP functions to production checklist
