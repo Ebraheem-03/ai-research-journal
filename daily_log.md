@@ -184,3 +184,4 @@
 - 2026-08-17: Designed cost monitoring dashboard for multi-model inference pipeline — tracked per-request cost by model and endpoint
 - 2026-08-18: Reviewed NIST AI RMF 1.0 controls for agentic AI deployment — mapped GOVERN and MAP functions to production checklist
 - 2026-08-19: Analyzed KV-cache compression techniques for long-context inference — compared PagedAttention vs StreamingLLM approaches
+- 2026-08-20: Investigated continuous batching optimizations in vLLM for heterogeneous request length distributions
