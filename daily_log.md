@@ -185,3 +185,4 @@
 - 2026-08-18: Reviewed NIST AI RMF 1.0 controls for agentic AI deployment — mapped GOVERN and MAP functions to production checklist
 - 2026-08-19: Analyzed KV-cache compression techniques for long-context inference — compared PagedAttention vs StreamingLLM approaches
 - 2026-08-20: Investigated continuous batching optimizations in vLLM for heterogeneous request length distributions
+- 2026-08-21: Read Anthropic's responsible scaling policy and compared to DeepMind's approach — documented key policy divergences
