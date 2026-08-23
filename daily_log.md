@@ -187,3 +187,4 @@
 - 2026-08-20: Investigated continuous batching optimizations in vLLM for heterogeneous request length distributions
 - 2026-08-21: Read Anthropic's responsible scaling policy and compared to DeepMind's approach — documented key policy divergences
 - 2026-08-22: Evaluated prompt injection defense strategies — tested system prompt isolation and input sanitization patterns
+- 2026-08-23: Evaluated BGE-M3 multilingual embeddings vs OpenAI text-embedding-3-large for cross-lingual retrieval accuracy
