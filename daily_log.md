@@ -189,3 +189,4 @@
 - 2026-08-22: Evaluated prompt injection defense strategies — tested system prompt isolation and input sanitization patterns
 - 2026-08-23: Evaluated BGE-M3 multilingual embeddings vs OpenAI text-embedding-3-large for cross-lingual retrieval accuracy
 - 2026-08-24: Studied ring attention mechanism for distributed long-context inference across multiple GPUs
+- 2026-08-25: Studied speculative decoding and its effect on TTFT (time-to-first-token) — evaluated draft model selection strategies for Llama 4 variants
