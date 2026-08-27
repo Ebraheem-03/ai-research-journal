@@ -191,3 +191,4 @@
 - 2026-08-24: Studied ring attention mechanism for distributed long-context inference across multiple GPUs
 - 2026-08-25: Studied speculative decoding and its effect on TTFT (time-to-first-token) — evaluated draft model selection strategies for Llama 4 variants
 - 2026-08-26: Compared vLLM vs TGI throughput benchmarks on A100 for production serving — measured p50/p95 latency across varying batch sizes
+- 2026-08-27: Designed LangGraph state machine for a multi-turn document Q&A agent — modeled state transitions for retrieval and generation nodes
