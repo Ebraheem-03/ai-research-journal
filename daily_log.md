@@ -194,3 +194,4 @@
 - 2026-08-27: Designed LangGraph state machine for a multi-turn document Q&A agent — modeled state transitions for retrieval and generation nodes
 - 2026-08-28: Built automated data flywheel pipeline: production logs → annotation → fine-tuning dataset → model update
 - 2026-08-29: Studied red-teaming methodologies for LLM safety evaluation — reviewed OWASP Top 10 for LLM Applications
+- 2026-08-30: Built sandboxed code execution environment for autonomous coding agents with resource limits and timeout controls
