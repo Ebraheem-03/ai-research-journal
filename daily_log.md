@@ -195,3 +195,4 @@
 - 2026-08-28: Built automated data flywheel pipeline: production logs → annotation → fine-tuning dataset → model update
 - 2026-08-29: Studied red-teaming methodologies for LLM safety evaluation — reviewed OWASP Top 10 for LLM Applications
 - 2026-08-30: Built sandboxed code execution environment for autonomous coding agents with resource limits and timeout controls
+- 2026-08-31: Evaluated adversarial robustness of instruction-tuned models using automated jailbreak detection benchmarks
