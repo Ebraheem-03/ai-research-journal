@@ -146,3 +146,24 @@ N/A
 [LLM Mixture of Experts Explained — A 2026 Field Guide](https://tensorops.ai/blog/what-is-mixture-of-experts-llm)
 
 ---
+
+---
+
+## Month of 2026-08
+
+### 📊 Activity Summary
+- Days logged: 31
+- Weekly notes added: 5
+- Topics covered: llm-architecture, rag, Agentic AI, LLMOps & Evaluation, AI Safety & Alignment, Open Source Models, Inference Optimization, Vector Databases & Embeddings, LLM Architecture & Scaling, RAG Systems, Agentic AI, LLMOps & Evaluation, AI Safety & Alignment, Open Source Models, Inference Optimization, Vector Databases & Embeddings, LLM Architecture & Scaling, RAG Systems, Agentic AI, LLMOps & Evaluation, AI Safety & Alignment, Open Source Models, Inference Optimization, Vector Databases & Embeddings, LLM Architecture & Scaling, RAG Systems, Agentic AI, LLMOps & Evaluation
+
+### 🧠 Key Themes This Month
+- Explored topics related to: retrieval-augmented-generation
+- Explored topics related to: large-language-models
+- Explored topics related to: clinical-decision-support
+- Explored topics related to: multi-agent-systems
+- Explored topics related to: orchestration-frameworks
+
+### 🔗 Most Valuable Source This Month
+[LLM Hallucination Detection in Production - LayerLens](https://layerlens.ai/blog/llm-hallucination-detection-in-production)
+
+---
