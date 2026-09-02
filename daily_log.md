@@ -197,3 +197,4 @@
 - 2026-08-30: Built sandboxed code execution environment for autonomous coding agents with resource limits and timeout controls
 - 2026-08-31: Evaluated adversarial robustness of instruction-tuned models using automated jailbreak detection benchmarks
 - 2026-09-01: Reviewed hallucination detection techniques: SelfCheckGPT vs NLI-based approaches — benchmarked on TruthfulQA dataset
+- 2026-09-02: Tested structured outputs with constrained decoding using Outlines library — benchmarked JSON schema adherence rates across model sizes
