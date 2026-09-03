@@ -198,3 +198,4 @@
 - 2026-08-31: Evaluated adversarial robustness of instruction-tuned models using automated jailbreak detection benchmarks
 - 2026-09-01: Reviewed hallucination detection techniques: SelfCheckGPT vs NLI-based approaches — benchmarked on TruthfulQA dataset
 - 2026-09-02: Tested structured outputs with constrained decoding using Outlines library — benchmarked JSON schema adherence rates across model sizes
+- 2026-09-03: Implemented output filtering guardrails using Guardrails-AI library — configured validators for PII and toxicity detection
