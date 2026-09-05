@@ -200,3 +200,4 @@
 - 2026-09-02: Tested structured outputs with constrained decoding using Outlines library — benchmarked JSON schema adherence rates across model sizes
 - 2026-09-03: Implemented output filtering guardrails using Guardrails-AI library — configured validators for PII and toxicity detection
 - 2026-09-04: Evaluated agent observability patterns using LangSmith traces — identified common failure modes in multi-step workflows
+- 2026-09-05: Built tool-use evaluation harness for agentic systems — measured tool selection accuracy across 200 test scenarios
