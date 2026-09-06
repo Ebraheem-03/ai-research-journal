@@ -201,3 +201,4 @@
 - 2026-09-03: Implemented output filtering guardrails using Guardrails-AI library — configured validators for PII and toxicity detection
 - 2026-09-04: Evaluated agent observability patterns using LangSmith traces — identified common failure modes in multi-step workflows
 - 2026-09-05: Built tool-use evaluation harness for agentic systems — measured tool selection accuracy across 200 test scenarios
+- 2026-09-06: Profiled memory usage patterns for Llama-4-Scout 109B across different quantization levels (FP16, INT8, INT4)
