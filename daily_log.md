@@ -207,3 +207,4 @@
 - 2026-09-09: Studied memory architectures for long-running agents — compared sliding window vs summarization-based approaches
 - 2026-09-10: Built sandboxed code execution environment for autonomous coding agents with resource limits and timeout controls
 - 2026-09-11: Evaluated BGE-M3 multilingual embeddings vs OpenAI text-embedding-3-large for cross-lingual retrieval accuracy
+- 2026-09-12: Debugged token budget exhaustion in nested AutoGen agent conversation — implemented token counting middleware
