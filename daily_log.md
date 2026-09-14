@@ -209,3 +209,4 @@
 - 2026-09-11: Evaluated BGE-M3 multilingual embeddings vs OpenAI text-embedding-3-large for cross-lingual retrieval accuracy
 - 2026-09-12: Debugged token budget exhaustion in nested AutoGen agent conversation — implemented token counting middleware
 - 2026-09-13: Set up RAGAS evaluation pipeline for faithfulness and context recall metrics — integrated with CI/CD for nightly runs
+- 2026-09-14: Configured LangSmith tracing for production prompt debugging — set up alerting on latency regression and error rate spikes
