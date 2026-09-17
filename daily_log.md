@@ -212,3 +212,4 @@
 - 2026-09-14: Configured LangSmith tracing for production prompt debugging — set up alerting on latency regression and error rate spikes
 - 2026-09-15: Designed retry and fallback patterns for unreliable tool calls in production agent deployments
 - 2026-09-16: Implemented prompt versioning system with A/B testing support — tracked performance metrics across prompt iterations
+- 2026-09-17: Wrote regression test harness for prompt template changes before deployment — baseline comparison using semantic similarity
