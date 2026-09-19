@@ -214,3 +214,4 @@
 - 2026-09-16: Implemented prompt versioning system with A/B testing support — tracked performance metrics across prompt iterations
 - 2026-09-17: Wrote regression test harness for prompt template changes before deployment — baseline comparison using semantic similarity
 - 2026-09-18: Implemented structured planning module using ReAct framework with self-reflection for complex task decomposition
+- 2026-09-19: Benchmarked Pinecone serverless vs Milvus for 10M vector workload — compared query latency and recall@10 metrics
