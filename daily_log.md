@@ -217,3 +217,4 @@
 - 2026-09-19: Benchmarked Pinecone serverless vs Milvus for 10M vector workload — compared query latency and recall@10 metrics
 - 2026-09-20: Designed cost monitoring dashboard for multi-model inference pipeline — tracked per-request cost by model and endpoint
 - 2026-09-21: Studied Constitutional AI approach vs RLHF for instruction following — compared training stability and alignment tax
+- 2026-09-22: Built automated data flywheel pipeline: production logs → annotation → fine-tuning dataset → model update
