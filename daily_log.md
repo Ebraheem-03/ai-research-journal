@@ -218,3 +218,4 @@
 - 2026-09-20: Designed cost monitoring dashboard for multi-model inference pipeline — tracked per-request cost by model and endpoint
 - 2026-09-21: Studied Constitutional AI approach vs RLHF for instruction following — compared training stability and alignment tax
 - 2026-09-22: Built automated data flywheel pipeline: production logs → annotation → fine-tuning dataset → model update
+- 2026-09-23: Implemented query decomposition pipeline for complex multi-hop RAG questions with intermediate retrieval steps
