@@ -221,3 +221,4 @@
 - 2026-09-23: Implemented query decomposition pipeline for complex multi-hop RAG questions with intermediate retrieval steps
 - 2026-09-24: Studied A2A (Agent-to-Agent) protocol vs MCP (Model Context Protocol) differences — mapped capability overlap
 - 2026-09-25: Designed LangGraph state machine for a multi-turn document Q&A agent — modeled state transitions for retrieval and generation nodes
+- 2026-09-26: Evaluated prompt injection defense strategies — tested system prompt isolation and input sanitization patterns
