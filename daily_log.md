@@ -223,3 +223,4 @@
 - 2026-09-25: Designed LangGraph state machine for a multi-turn document Q&A agent — modeled state transitions for retrieval and generation nodes
 - 2026-09-26: Evaluated prompt injection defense strategies — tested system prompt isolation and input sanitization patterns
 - 2026-09-27: Implemented human-in-the-loop approval checkpoint in CrewAI workflow — tested with financial analysis agent pipeline
+- 2026-09-28: Evaluated LLM-as-a-Judge consistency using inter-rater reliability metrics — compared GPT-4o vs Claude 3.5 as evaluators
