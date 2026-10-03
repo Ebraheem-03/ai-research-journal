@@ -228,3 +228,4 @@
 - 2026-09-30: Implemented content classification guardrails with multi-label toxicity detection for user-facing chatbot
 - 2026-10-01: Evaluated prompt injection defense strategies — tested system prompt isolation and input sanitization patterns
 - 2026-10-02: Implemented hybrid BM25 + dense retrieval with Reciprocal Rank Fusion (RRF) scoring — tested on a 50K document corpus
+- 2026-10-03: Compared HNSW vs IVF-PQ index strategies for billion-scale vector search with latency constraints
