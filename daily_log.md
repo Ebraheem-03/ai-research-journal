@@ -230,3 +230,4 @@
 - 2026-10-02: Implemented hybrid BM25 + dense retrieval with Reciprocal Rank Fusion (RRF) scoring — tested on a 50K document corpus
 - 2026-10-03: Compared HNSW vs IVF-PQ index strategies for billion-scale vector search with latency constraints
 - 2026-10-04: Studied A2A (Agent-to-Agent) protocol vs MCP (Model Context Protocol) differences — mapped capability overlap
+- 2026-10-05: Implemented parent-child document retrieval strategy with metadata filtering for multi-tenant RAG system
