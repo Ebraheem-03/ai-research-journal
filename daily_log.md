@@ -232,3 +232,4 @@
 - 2026-10-04: Studied A2A (Agent-to-Agent) protocol vs MCP (Model Context Protocol) differences — mapped capability overlap
 - 2026-10-05: Implemented parent-child document retrieval strategy with metadata filtering for multi-tenant RAG system
 - 2026-10-06: Evaluated LLM-as-a-Judge consistency using inter-rater reliability metrics — compared GPT-4o vs Claude 3.5 as evaluators
+- 2026-10-07: Designed cost monitoring dashboard for multi-model inference pipeline — tracked per-request cost by model and endpoint
