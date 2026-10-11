@@ -236,3 +236,4 @@
 - 2026-10-08: Read Anthropic's responsible scaling policy and compared to DeepMind's approach — documented key policy divergences
 - 2026-10-09: Evaluated BGE-M3 multilingual embeddings vs OpenAI text-embedding-3-large for cross-lingual retrieval accuracy
 - 2026-10-10: Studied contextual retrieval with document-level context prepending — measured impact on chunk relevance scores
+- 2026-10-11: Set up structured logging and distributed tracing for a multi-service RAG pipeline using OpenTelemetry
