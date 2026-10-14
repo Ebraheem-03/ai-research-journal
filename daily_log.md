@@ -239,3 +239,4 @@
 - 2026-10-11: Set up structured logging and distributed tracing for a multi-service RAG pipeline using OpenTelemetry
 - 2026-10-12: Designed retry and fallback patterns for unreliable tool calls in production agent deployments
 - 2026-10-13: Evaluated agent observability patterns using LangSmith traces — identified common failure modes in multi-step workflows
+- 2026-10-14: Implemented canary deployment pattern for LLM model updates with automatic rollback on quality regression
