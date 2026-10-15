@@ -240,3 +240,4 @@
 - 2026-10-12: Designed retry and fallback patterns for unreliable tool calls in production agent deployments
 - 2026-10-13: Evaluated agent observability patterns using LangSmith traces — identified common failure modes in multi-step workflows
 - 2026-10-14: Implemented canary deployment pattern for LLM model updates with automatic rollback on quality regression
+- 2026-10-15: Wrote regression test harness for prompt template changes before deployment — baseline comparison using semantic similarity
