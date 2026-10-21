@@ -246,3 +246,4 @@
 - 2026-10-18: Designed LangGraph state machine for a multi-turn document Q&A agent — modeled state transitions for retrieval and generation nodes
 - 2026-10-19: Implemented structured planning module using ReAct framework with self-reflection for complex task decomposition
 - 2026-10-20: Analyzed KV-cache compression techniques for long-context inference — compared PagedAttention vs StreamingLLM approaches
+- 2026-10-21: Studied memory architectures for long-running agents — compared sliding window vs summarization-based approaches
