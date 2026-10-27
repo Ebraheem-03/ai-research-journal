@@ -252,3 +252,4 @@
 - 2026-10-24: Built automated data flywheel pipeline: production logs → annotation → fine-tuning dataset → model update
 - 2026-10-25: Evaluated prefix caching strategies for multi-turn chatbot deployments — measured cache hit rates under production traffic patterns
 - 2026-10-26: Tested structured outputs with constrained decoding using Outlines library — benchmarked JSON schema adherence rates across model sizes
+- 2026-10-27: Studied red-teaming methodologies for LLM safety evaluation — reviewed OWASP Top 10 for LLM Applications
