@@ -253,3 +253,4 @@
 - 2026-10-25: Evaluated prefix caching strategies for multi-turn chatbot deployments — measured cache hit rates under production traffic patterns
 - 2026-10-26: Tested structured outputs with constrained decoding using Outlines library — benchmarked JSON schema adherence rates across model sizes
 - 2026-10-27: Studied red-teaming methodologies for LLM safety evaluation — reviewed OWASP Top 10 for LLM Applications
+- 2026-10-28: Benchmarked Pinecone serverless vs Milvus for 10M vector workload — compared query latency and recall@10 metrics
