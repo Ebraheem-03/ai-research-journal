@@ -254,3 +254,4 @@
 - 2026-10-26: Tested structured outputs with constrained decoding using Outlines library — benchmarked JSON schema adherence rates across model sizes
 - 2026-10-27: Studied red-teaming methodologies for LLM safety evaluation — reviewed OWASP Top 10 for LLM Applications
 - 2026-10-28: Benchmarked Pinecone serverless vs Milvus for 10M vector workload — compared query latency and recall@10 metrics
+- 2026-10-29: Studied watermarking techniques for LLM-generated text — compared statistical and learned watermark approaches
