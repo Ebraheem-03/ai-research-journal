@@ -256,3 +256,4 @@
 - 2026-10-28: Benchmarked Pinecone serverless vs Milvus for 10M vector workload — compared query latency and recall@10 metrics
 - 2026-10-29: Studied watermarking techniques for LLM-generated text — compared statistical and learned watermark approaches
 - 2026-10-30: Benchmarked GGUF vs AWQ quantization for edge deployment of Mistral-7B on consumer hardware
+- 2026-10-31: Implemented content classification guardrails with multi-label toxicity detection for user-facing chatbot
