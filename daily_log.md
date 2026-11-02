@@ -258,3 +258,4 @@
 - 2026-10-30: Benchmarked GGUF vs AWQ quantization for edge deployment of Mistral-7B on consumer hardware
 - 2026-10-31: Implemented content classification guardrails with multi-label toxicity detection for user-facing chatbot
 - 2026-11-01: Built sandboxed code execution environment for autonomous coding agents with resource limits and timeout controls
+- 2026-11-02: Studied A2A (Agent-to-Agent) protocol vs MCP (Model Context Protocol) differences — mapped capability overlap
