@@ -261,3 +261,4 @@
 - 2026-11-02: Studied A2A (Agent-to-Agent) protocol vs MCP (Model Context Protocol) differences — mapped capability overlap
 - 2026-11-03: Studied watermarking techniques for LLM-generated text — compared statistical and learned watermark approaches
 - 2026-11-04: Reviewed NIST AI RMF 1.0 controls for agentic AI deployment — mapped GOVERN and MAP functions to production checklist
+- 2026-11-05: Benchmarked GGUF vs AWQ quantization for edge deployment of Mistral-7B on consumer hardware
