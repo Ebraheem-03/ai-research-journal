@@ -263,3 +263,4 @@
 - 2026-11-04: Reviewed NIST AI RMF 1.0 controls for agentic AI deployment — mapped GOVERN and MAP functions to production checklist
 - 2026-11-05: Benchmarked GGUF vs AWQ quantization for edge deployment of Mistral-7B on consumer hardware
 - 2026-11-11: Implemented parent-child document retrieval strategy with metadata filtering for multi-tenant RAG system
+- 2026-11-12: Studied contextual retrieval with document-level context prepending — measured impact on chunk relevance scores
