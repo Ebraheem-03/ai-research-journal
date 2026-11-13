@@ -264,3 +264,4 @@
 - 2026-11-05: Benchmarked GGUF vs AWQ quantization for edge deployment of Mistral-7B on consumer hardware
 - 2026-11-11: Implemented parent-child document retrieval strategy with metadata filtering for multi-tenant RAG system
 - 2026-11-12: Studied contextual retrieval with document-level context prepending — measured impact on chunk relevance scores
+- 2026-11-13: Compared vLLM vs TGI throughput benchmarks on A100 for production serving — measured p50/p95 latency across varying batch sizes
