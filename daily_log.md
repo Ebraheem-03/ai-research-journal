@@ -268,3 +268,4 @@
 - 2026-11-14: Implemented human-in-the-loop approval checkpoint in CrewAI workflow — tested with financial analysis agent pipeline
 - 2026-11-15: Wrote regression test harness for prompt template changes before deployment — baseline comparison using semantic similarity
 - 2026-11-16: Evaluated late chunking vs semantic chunking strategies for long-document RAG — tested with legal contract corpus
+- 2026-11-17: Reviewed EU AI Act compliance requirements for high-risk AI systems — mapped to technical implementation controls
