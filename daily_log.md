@@ -270,3 +270,4 @@
 - 2026-11-16: Evaluated late chunking vs semantic chunking strategies for long-document RAG — tested with legal contract corpus
 - 2026-11-17: Reviewed EU AI Act compliance requirements for high-risk AI systems — mapped to technical implementation controls
 - 2026-11-18: Evaluated BGE-M3 multilingual embeddings vs OpenAI text-embedding-3-large for cross-lingual retrieval accuracy
+- 2026-11-19: Evaluated prefix caching strategies for multi-turn chatbot deployments — measured cache hit rates under production traffic patterns
