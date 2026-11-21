@@ -272,3 +272,4 @@
 - 2026-11-18: Evaluated BGE-M3 multilingual embeddings vs OpenAI text-embedding-3-large for cross-lingual retrieval accuracy
 - 2026-11-19: Evaluated prefix caching strategies for multi-turn chatbot deployments — measured cache hit rates under production traffic patterns
 - 2026-11-20: Tested hypothetical document embedding (HyDE) approach for improving zero-shot retrieval on domain-specific queries
+- 2026-11-21: Reviewed hallucination detection techniques: SelfCheckGPT vs NLI-based approaches — benchmarked on TruthfulQA dataset
