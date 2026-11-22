@@ -273,3 +273,4 @@
 - 2026-11-19: Evaluated prefix caching strategies for multi-turn chatbot deployments — measured cache hit rates under production traffic patterns
 - 2026-11-20: Tested hypothetical document embedding (HyDE) approach for improving zero-shot retrieval on domain-specific queries
 - 2026-11-21: Reviewed hallucination detection techniques: SelfCheckGPT vs NLI-based approaches — benchmarked on TruthfulQA dataset
+- 2026-11-22: Studied speculative decoding and its effect on TTFT (time-to-first-token) — evaluated draft model selection strategies for Llama 4 variants
