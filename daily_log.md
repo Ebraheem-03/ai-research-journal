@@ -275,3 +275,4 @@
 - 2026-11-21: Reviewed hallucination detection techniques: SelfCheckGPT vs NLI-based approaches — benchmarked on TruthfulQA dataset
 - 2026-11-22: Studied speculative decoding and its effect on TTFT (time-to-first-token) — evaluated draft model selection strategies for Llama 4 variants
 - 2026-11-23: Implemented structured planning module using ReAct framework with self-reflection for complex task decomposition
+- 2026-11-24: Investigated continuous batching optimizations in vLLM for heterogeneous request length distributions
