@@ -276,3 +276,4 @@
 - 2026-11-22: Studied speculative decoding and its effect on TTFT (time-to-first-token) — evaluated draft model selection strategies for Llama 4 variants
 - 2026-11-23: Implemented structured planning module using ReAct framework with self-reflection for complex task decomposition
 - 2026-11-24: Investigated continuous batching optimizations in vLLM for heterogeneous request length distributions
+- 2026-11-25: Built tool-use evaluation harness for agentic systems — measured tool selection accuracy across 200 test scenarios
