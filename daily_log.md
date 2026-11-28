@@ -279,3 +279,4 @@
 - 2026-11-25: Built tool-use evaluation harness for agentic systems — measured tool selection accuracy across 200 test scenarios
 - 2026-11-26: Studied memory architectures for long-running agents — compared sliding window vs summarization-based approaches
 - 2026-11-27: Set up RAGAS evaluation pipeline for faithfulness and context recall metrics — integrated with CI/CD for nightly runs
+- 2026-11-28: Implemented hybrid BM25 + dense retrieval with Reciprocal Rank Fusion (RRF) scoring — tested on a 50K document corpus
